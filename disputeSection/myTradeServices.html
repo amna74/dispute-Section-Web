@@ -1,0 +1,707 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <!----======== CSS ======== -->
+
+    <!----===== Boxicons CSS ===== -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+
+    <title>Orders Section</title>
+
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav class="sidebar">
+      <header>
+        <div class="image-text">
+          <span class="image">
+            <img src="logo.png" alt="" />
+          </span>
+
+          <div class="text logo-text">
+            <span class="name">B2B</span>
+            <span class="profession">First Choice</span>
+          </div>
+        </div>
+      </header>
+
+      <div class="menu-bar">
+        <div class="menu">
+          <li class="search-box">
+            <i class="bx bx-search icon"></i>
+            <input type="text" placeholder="Search..." />
+          </li>
+
+          <ul class="menu-links sidebarLink">
+            <li class="nav-link">
+              <a href="myHome.html">
+                <i class="bx bx-home-alt icon"></i>
+                <span class="text nav-text">My Home</span>
+              </a>
+            </li>
+
+            <li class="nav-link sidebarLink">
+              <a href="myMessages.html">
+                <i class="bx bx-bell icon"></i>
+
+                <span class="text nav-text">My Messages</span>
+              </a>
+            </li>
+
+            <li class="nav-link sidebarLink">
+              <a href="myOrders.html">
+                <i class="bx bx-bar-chart-alt-2 icon"></i>
+                <span class="text nav-text">My Orders</span>
+              </a>
+            </li>
+
+            <li class="nav-link sidebarLink">
+              <a href="mytransactions.html">
+                <i class="bx bx-pie-chart-alt icon"></i>
+                <span class="text nav-text">My Transactions</span>
+              </a>
+            </li>
+
+            <li class="nav-link sidebarLink">
+              <a href="myBuyingLeads.html">
+                <i class="bx bx-heart icon"></i>
+                <span class="text nav-text">My Buying Leads</span>
+              </a>
+            </li>
+
+            <li class="nav-link sidebarLink">
+              <a href="myList.html">
+                <i class="bx bx-wallet icon"></i>
+                <span class="text nav-text">My List</span>
+              </a>
+            </li>
+            <li class="nav-link sidebarLink">
+              <a href="myContactInfo.html">
+                <i class="bx bx-wallet icon"></i>
+                <span class="text nav-text">My Contact Info</span>
+              </a>
+            </li>
+            <li class="nav-link sidebarLink actineLink">
+              <a href="myTradeServices.html">
+                <i class="bx bx-wallet icon"></i>
+                <span class="text nav-text">My Trade Services</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <section
+      class="home"
+      style="width: 1110px"
+      style="margin-top: 20px; font-size: 20px"
+    >
+      <ul class="disputeNav" style="font-size: 17px; background-color: white">
+        <li class="active dispute_link">Logistics</li>
+        <li
+          class="dispute_link"
+          onclick="location.href='inspectionOrderManagement.html';"
+        >
+          Inspection Order Management
+        </li>
+        <li class="dispute_link" onclick="location.href='supplierReport.html';">
+          Supplier Report
+        </li>
+      </ul>
+      <section>
+        <div class="container" style="font-size: 14px">
+          <ul class="nav nav-tabs">
+            <li class="active">
+              <a data-toggle="tab" href="#menu1">Logistics Solutions</a>
+            </li>
+            <li>
+              <a data-toggle="tab" href="#menu2">Manage Logistics Orders</a>
+            </li>
+          </ul>
+
+          <div class="tab-content">
+            <div id="menu1" class="tab-pane fade in active">
+              <strong
+                ><p class="refundHeading">
+                  B2Bfirstchoice.com Logistics
+                </p></strong
+              >
+              <p style="padding-left: 25px">
+                Give us a few details about your order, and we’ll estimate the
+                cost to ship it with Alibaba.com Shipping.<a href="#"
+                  >Learn more here</a
+                >
+              </p>
+              <div class="bankDiv">
+                <p class="cardHeading">General</p>
+                <div class="line-sperator"></div>
+                <div>
+                  <div
+                    class="form-check form-check-inline"
+                    style="padding-top: 0px"
+                  >
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      style="margin-top: 20px; margin-left: 10px"
+                      name="inlineRadioOptions"
+                      id="inlineRadio1"
+                      value="option1"
+                    />
+                  </div>
+                  <label
+                    >This is not a hazardous shipment (i.e, batteries, liquids)
+                    <a
+                      href="#"
+                      title="At this time, B2Bfirstchoice.com Freight offers international freight services for business shipments only - not individuals."
+                      data-toggle="popover"
+                      data-trigger="hover"
+                      data-content=""
+                      data-html="true"
+                    >
+                      <i class="far fa-question-circle"></i
+                    ></a>
+                  </label>
+                  <br />
+                  <div
+                    class="form-check form-check-inline"
+                    style="padding-top: 0px"
+                  >
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      style="margin-top: 20px; margin-left: 10px"
+                      name="inlineRadioOptions"
+                      id="inlineRadio1"
+                      value="option2"
+                    />
+                  </div>
+                  <label
+                    >This is not a personal shipment
+                    <a
+                      href="#"
+                      title="Our forwarders currently do not handle any hazardous shipments."
+                      data-toggle="popover"
+                      data-trigger="hover"
+                      data-content=""
+                      data-html="true"
+                    >
+                      <i class="far fa-question-circle"></i
+                    ></a>
+                  </label>
+                </div>
+                <div class="line-sperator"></div>
+                <div class="row" style="padding-top: 20px; padding-left: 30px">
+                  <label style="padding-top: 25px">
+                    Trade Assurance order number</label
+                  >
+                  <div
+                    class="form-group filter_input"
+                    style="padding-top: 10px"
+                  >
+                    <select
+                      class="form-control form-select mt-3 input-item"
+                      style="
+                        height: 30px;
+                        margin-left: 20px;
+
+                        width: 400px;
+                        padding-top: 5px;
+                        margin-top: 10px;
+                      "
+                    >
+                      <option selected disabled value="">
+                        Please Select..
+                      </option>
+                      <option>999999999999999999</option>
+                      <option>999999999999999999</option>
+                    </select>
+                  </div>
+                </div>
+                <div
+                  class="form-check form-check-inline"
+                  style="padding-top: 0px"
+                >
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    style="margin-top: 20px; margin-left: 10px"
+                    name="inlineRadioOptions"
+                    id="inlineRadio1"
+                    value="option1"
+                  />
+                </div>
+                <label
+                  >I am shipping to Amazon FBA warehouse
+                  <a
+                    href="#"
+                    title="At this time, B2Bfirstchoice.com Freight offers international freight services for business shipments only - not individuals."
+                    data-toggle="popover"
+                    data-trigger="hover"
+                    data-content=""
+                    data-html="true"
+                  >
+                    <i class="far fa-question-circle"></i
+                  ></a>
+                </label>
+                <div class="line-sperator"></div>
+                <div style="padding-top: 20px; padding-left: 10px">
+                  <p>
+                    <span style="color: red">* </span> Goods ready (estimated)
+                  </p>
+                  <div class="form-group filter_input" style="width: 150px">
+                    <input
+                      class="form-control form-select mt-3 input-item"
+                      style="
+                        height: 40px;
+                        width: 217px;
+                        padding-left: 0px;
+                        margin-left: 10px;
+                      "
+                      type="date"
+                      id="reportMonth"
+                    />
+                  </div>
+                  <p class="cardHeading"><strong>Shipment Details </strong></p>
+                </div>
+
+                <section style="font-size: 14px">
+                  <div class="container">
+                    <ul class="nav nav-tabs">
+                      <li class="active">
+                        <a data-toggle="tab" href="#subthreemenu1"
+                          >PALLETS/BOXES/CRATES</a
+                        >
+                      </li>
+                      <li>
+                        <a data-toggle="tab" href="#subthreemenu2"
+                          >CONTAINERS</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+
+                  <div class="tab-content">
+                    <div id="subthreemenu1" class="tab-pane fade in active">
+                      <section style="font-size: 14px">
+                        <div class="container">
+                          <ul class="nav nav-tabs">
+                            <li class="active">
+                              <a data-toggle="tab" href="#subfourmenu1"
+                                ><div class="form-check form-check-inline">
+                                  <input
+                                    class="form-check-input"
+                                    type="radio"
+                                    name="inlineRadioOptions"
+                                    id="inlineRadio1"
+                                    value="option1"
+                                  />
+                                </div>
+                                <label>Total Shipment </label></a
+                              >
+                            </li>
+                            <li>
+                              <a data-toggle="tab" href="#subfourmenu2"
+                                ><div class="form-check form-check-inline">
+                                  <input
+                                    class="form-check-input"
+                                    type="radio"
+                                    name="inlineRadioOptions"
+                                    id="inlineRadio1"
+                                    value="option1"
+                                  />
+                                </div>
+                                <label>Boxes/ Pallets </label></a
+                              >
+                            </li>
+                          </ul>
+                        </div>
+
+                        <div class="tab-content">
+                          <div
+                            id="subfourmenu1"
+                            class="tab-pane fade in active"
+                          >
+                            <div
+                              style="padding-top: 20px; margin-left: 20px"
+                              class="row"
+                            >
+                              <div>
+                                <p>
+                                  <span style="color: red">* </span> Number of
+                                  units
+                                </p>
+                                <div
+                                  class="form-group filter_input"
+                                  style="width: 150px"
+                                >
+                                  <input
+                                    class="form-control form-select mt-3 input-item"
+                                    style="
+                                      height: 40px;
+                                      width: 100px;
+                                      padding-left: 0px;
+                                      margin-left: 10px;
+                                    "
+                                    type="number"
+                                    id="reportMonth"
+                                  />
+                                </div>
+                              </div>
+                              <div>
+                                <p>Total Volume</p>
+                                <div
+                                  class="form-group filter_input"
+                                  style="width: 150px"
+                                >
+                                  <input
+                                    class="form-control form-select mt-3 input-item"
+                                    style="
+                                      height: 40px;
+                                      width: 100px;
+                                      padding-left: 0px;
+                                      margin-left: 10px;
+                                    "
+                                    type="number"
+                                    id="reportMonth"
+                                  />
+                                </div>
+                                <div
+                                  class="form-group filter_input"
+                                  style="width: 100px"
+                                >
+                                  <select
+                                    class="form-control form-select mt-3 input-item"
+                                    style="
+                                      height: 40px;
+                                      width: 77px;
+                                      margin-left: 13px;
+                                    "
+                                  >
+                                    <option selected value="">CBM</option>
+                                    <option>CFT</option>
+                                  </select>
+                                </div>
+                              </div>
+                              <div>
+                                <p>Total Weight</p>
+                                <div
+                                  class="form-group filter_input"
+                                  style="width: 150px"
+                                >
+                                  <input
+                                    class="form-control form-select mt-3 input-item"
+                                    style="
+                                      height: 40px;
+                                      width: 100px;
+                                      padding-left: 0px;
+                                      margin-left: 10px;
+                                    "
+                                    type="number"
+                                    id="reportMonth"
+                                  />
+                                </div>
+                                <div
+                                  class="form-group filter_input"
+                                  style="width: 100px"
+                                >
+                                  <select
+                                    class="form-control form-select mt-3 input-item"
+                                    style="
+                                      height: 40px;
+                                      width: 77px;
+                                      margin-left: 13px;
+                                    "
+                                  >
+                                    <option selected value="">KG</option>
+                                    <option>LB</option>
+                                  </select>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="line-sperator"></div>
+                            <p>Shipment total: <span> 0 Units </span></p>
+                          </div>
+                          <div id="subfourmenu2" class="tab-pane fade">
+                            <div
+                              style="padding-top: 20px; margin-left: 20px"
+                              class="row"
+                            >
+                              <div style=" margin-left: 20px">
+                                <p>
+                                  <span style="color: red">* </span>Package
+                                  Units
+                                </p>
+                                <div class="row">
+                                  <div
+                                    class="form-group filter_input"
+                                    style="width: 50px"
+                                  >
+                                    <input
+                                      class="form-control form-select mt-3 input-item"
+                                      style="
+                                        height: 40px;
+                                        width: 50px;
+                                        padding-left: 0px;
+                                        margin-left: 10px;
+                                      "
+                                      type="number"
+                                      id="reportMonth"
+                                    />
+                                  </div>
+                                </div>
+                              </div>
+                              <div style=" margin-left: 20px">
+                                <p>
+                                  <span style="color: red">* </span>Package type
+                                </p>
+                                <div class="row">
+                                  <div
+                                    class="form-group filter_input"
+                                    style="width: 100px"
+                                  >
+                                    <select
+                                      class="form-control form-select mt-3 input-item"
+                                      style="
+                                        height: 40px;
+                                        width: 77px;
+                                        margin-left: 13px;
+                                      "
+                                    >
+                                      <option selected value="">Boxes/Crates</option>
+                                      <option>Pallets</option>
+                                    </select>
+                                  </div>
+                                </div>
+                              </div>
+                              <div style=" margin-left: 20px">
+                                <p>
+                                  <span style="color: red">* </span>Dimension
+                                  per Box/Crate
+                                </p>
+                                <div class="row">
+                                  <div
+                                    class="form-group filter_input"
+                                    style="width: 50px"
+                                  >
+                                    <input
+                                      class="form-control form-select mt-3 input-item"
+                                      style="
+                                        height: 40px;
+                                        width: 50px;
+                                        padding-left: 0px;
+                                        margin-left: 10px;
+                                      "
+                                      type="number"
+                                      id="reportMonth"
+                                    />
+                                  </div>
+                                  <div
+                                    class="form-group filter_input"
+                                    style="width: 50px"
+                                  >
+                                    <input
+                                      class="form-control form-select mt-3 input-item"
+                                      style="
+                                        height: 40px;
+                                        width: 50px;
+                                        padding-left: 0px;
+                                        margin-left: 10px;
+                                      "
+                                      type="number"
+                                      id="reportMonth"
+                                    />
+                                  </div>
+                                  <div
+                                    class="form-group filter_input"
+                                    style="width: 50px"
+                                  >
+                                    <input
+                                      class="form-control form-select mt-3 input-item"
+                                      style="
+                                        height: 40px;
+                                        width: 50px;
+                                        padding-left: 0px;
+                                        margin-left: 10px;
+                                      "
+                                      type="number"
+                                      id="reportMonth"
+                                    />
+                                  </div>
+                                  <div
+                                    class="form-group filter_input"
+                                    style="width: 100px"
+                                  >
+                                    <select
+                                      class="form-control form-select mt-3 input-item"
+                                      style="
+                                        height: 40px;
+                                        width: 77px;
+                                        margin-left: 13px;
+                                      "
+                                    >
+                                      <option selected value="">CM</option>
+                                      <option>IN</option>
+                                    </select>
+                                  </div>
+                                </div>
+                              </div>
+                              <div style=" margin-left: 30px">
+                                <p>
+                                  <span style="color: red">* </span>Weight per
+                                  Box/Crate
+                                </p>
+                                <div class="row">
+                                  <div
+                                    class="form-group filter_input"
+                                    style="width: 50px"
+                                  >
+                                    <input
+                                      class="form-control form-select mt-3 input-item"
+                                      style="
+                                        height: 40px;
+                                        width: 50px;
+                                        padding-left: 0px;
+                                        margin-left: 10px;
+                                      "
+                                      type="number"
+                                      id="reportMonth"
+                                    />
+                                  </div>
+
+                                  <div
+                                    class="form-group filter_input"
+                                    style="width: 100px"
+                                  >
+                                    <select
+                                      class="form-control form-select mt-3 input-item"
+                                      style="
+                                        height: 40px;
+                                        width: 77px;
+                                        margin-left: 13px;
+                                      "
+                                    >
+                                      <option selected value="">KG</option>
+                                      <option>LB</option>
+                                    </select>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="line-sperator"></div>
+                            <p>Shipment total: <span> 0 Units </span></p>
+                          </div>
+                        </div>
+                      </section>
+                    </div>
+                    <div id="subthreemenu2" class="tab-pane fade">
+                      <div class="bankDiv" style=""></div>
+                    </div>
+                  </div>
+                </section>
+              </div>
+            </div>
+
+            <div id="menu2" class="tab-pane fade">
+              <div class="row">
+                <p style="margin-left: 20px; font-size: 20px; font-wight: 400">
+                  Manage Logistic Orders
+                </p>
+                <div class="col" style="text-align: right">
+                  <button
+                    class="btn paymentbtn"
+                    onclick="location.href='myHome.html';"
+                    style="width: 157px"
+                  >
+                    Get Shipping quote
+                  </button>
+                </div>
+              </div>
+              <div class="container h-100" style="background-color: white">
+                <div
+                  class="row table-head-product"
+                  style="width: 1070px; font-size: 13px; text-align: left"
+                >
+                  <div class="col-sm-2">Shipment Number</div>
+                  <div class="col-sm-3" style="padding-left: 0px">
+                    Trade Assurance Order
+                  </div>
+
+                  <div class="col-sm-2">Origin port</div>
+                  <div class="col-sm-2">Destination Port</div>
+                  <div class="col-sm-2">Shipment Status</div>
+                  <div class="col-sm-1">Actions</div>
+                </div>
+                <section>
+                  <div
+                    class="inq-qutations"
+                    style="margin-top: 20px; height: 80px"
+                  >
+                    <div
+                      class="row table-body-product"
+                      style="width: 1070px; font-size: 13px"
+                    >
+                      <div class="col-sm-2">Shipment Number</div>
+                      <div class="col-sm-3" style="padding-left: 0px">
+                        Trade Assurance Order
+                      </div>
+
+                      <div class="col-sm-2">Origin port</div>
+                      <div class="col-sm-2">Destination Port</div>
+                      <div class="col-sm-2">Shipment Status</div>
+                      <div class="col-sm-1">Actions</div>
+                    </div>
+                  </div>
+                </section>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </section>
+
+    <script src="script.js"></script>
+    <script></script>
+  </body>
+</html>

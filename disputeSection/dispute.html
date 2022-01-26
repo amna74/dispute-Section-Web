@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Dispute Section</title>
+    <meta name="description" content="Description Goes Here" />
+    <link rel="stylesheet" href="style.css" />
+
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="container">
+      <ul class="disputeNav">
+        <li class="active dispute_link">Make a New Complaint</li>
+        <li class="dispute_link" onclick="location.href='#';">
+          Complaint Management
+        </li>
+        <li class="dispute_link">FAQ</li>
+      </ul>
+      <div class="row dispute_section">
+        <p class="heading">
+          Please select the type of Complaint/Report you wish to submit
+        </p>
+      </div>
+
+      <div class="dispute_cards">
+        <div class="row">
+          <div class="col-sm-3 cardtitle">
+            <h5 class="card-title">B2B-Secure Trade Dispute</h5>
+          </div>
+          <div class="col-sm-7 cardbody">
+            <p class="card-text">
+              Trade dispute occured when I traded with a supplier using
+              B2Bfirstchoice.com B2B-Secure Trade
+            </p>
+          </div>
+          <div class="col-sm-2 cardbutton">
+            <button class="btn default" onclick="location.href='myHome.html';">
+              Complaint
+            </button>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-3 cardtitle">
+            <h5 class="card-title">Dispute over Wholesale Order</h5>
+          </div>
+          <div class="col-sm-7 cardbody">
+            <p class="card-text">
+              A Trade dispute occured when I ordered through B2Bfirstchoice.com
+              Wholesaler.
+            </p>
+          </div>
+          <div class="col-sm-2 cardbutton">
+            <button class="btn default" onclick="location.href='myHome.html';">
+              Complaint
+            </button>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-3 cardtitle">
+            <h5 class="card-title">Dispute Over Other Trade</h5>
+          </div>
+          <div class="col-sm-7 cardbody">
+            <p class="card-text">
+              Payment was made through a third party source, but I have not
+              received any products or a refund. B2Bfirstchoice.com does not
+              handle complaints related to conformity, damage or shortage of
+              products.
+            </p>
+          </div>
+          <div class="col-sm-2 cardbutton">
+            <button class="btn default">Report</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="row dispute_section">
+        <p class="heading">Other Complaints</p>
+      </div>
+
+      <div class="dispute_cards">
+        <div class="row">
+          <div class="col-sm-3 cardtitle">
+            <h5 class="card-title">
+              Trade Assurance supplier refuses to offer coverage
+            </h5>
+          </div>
+          <div class="col-sm-7 cardbody">
+            <p class="card-text">
+              If your Trade Assurance supplier refuses to support Trade
+              Assurance, you can submit a complaint to B2Bfirstchoice.com
+            </p>
+          </div>
+          <div class="col-sm-2 cardbutton">
+            <button class="btn default" onclick="location.href='myHome.html';">
+              Complaint
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="notice">
+        <span
+          >If you think that a seller (or a buyer) has violated Alibaba.com
+          rules but you have not traded with them, you have the ability to send
+          report to our team for review. Submit a report
+          <a href="#" class="anchor_tag">here </a>.
+        </span>
+      </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <script>
+      const items = document.querySelectorAll("ul li");
+      items.forEach((item) => {
+        item.addEventListener("click", () => {
+          document.querySelector("li.active").classList.remove("active");
+          item.classList.add("active");
+        });
+      });
+    </script>
+  </body>
+</html>

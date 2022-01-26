@@ -1,0 +1,662 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <!----======== CSS ======== -->
+
+    <!----===== Boxicons CSS ===== -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+
+    <title>Orders Section</title>
+
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav class="sidebar">
+      <header>
+        <div class="image-text">
+          <span class="image">
+            <img src="logo.png" alt="" />
+          </span>
+
+          <div class="text logo-text">
+            <span class="name">B2B</span>
+            <span class="profession">First Choice</span>
+          </div>
+        </div>
+      </header>
+
+      <div class="menu-bar">
+        <div class="menu">
+          <li class="search-box">
+            <i class="bx bx-search icon"></i>
+            <input type="text" placeholder="Search..." />
+          </li>
+
+          <ul class="menu-links sidebarLink">
+            <li class="nav-link">
+              <a href="myHome.html">
+                <i class="bx bx-home-alt icon"></i>
+                <span class="text nav-text">My Home</span>
+              </a>
+            </li>
+
+            <li class="nav-link sidebarLink">
+              <a href="myMessages.html">
+                <i class="bx bx-bell icon"></i>
+
+                <span class="text nav-text">My Messages</span>
+              </a>
+            </li>
+
+            <li class="nav-link sidebarLink">
+              <a href="myOrders.html">
+                <i class="bx bx-bar-chart-alt-2 icon"></i>
+                <span class="text nav-text">My Orders</span>
+              </a>
+            </li>
+
+            <li class="nav-link sidebarLink">
+              <a href="mytransactions.html">
+                <i class="bx bx-pie-chart-alt icon"></i>
+                <span class="text nav-text">My Transactions</span>
+              </a>
+            </li>
+
+            <li class="nav-link sidebarLink actineLink">
+              <a href="myBuyingLeads.html">
+                <i class="bx bx-heart icon"></i>
+                <span class="text nav-text">My Buying Leads</span>
+              </a>
+            </li>
+
+            <li class="nav-link sidebarLink">
+              <a href="myList.html">
+                <i class="bx bx-wallet icon"></i>
+                <span class="text nav-text">My List</span>
+              </a>
+            </li>
+            <li class="nav-link sidebarLink">
+              <a href="myContactInfo.html">
+                <i class="bx bx-wallet icon"></i>
+                <span class="text nav-text">My Contact Info</span>
+              </a>
+            </li>
+            <li class="nav-link sidebarLink">
+              <a href="myTradeServices.html">
+                <i class="bx bx-wallet icon"></i>
+                <span class="text nav-text">My Trade Services</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <section
+      class="home"
+      style="width: 1110px"
+      style="margin-top: 20px; font-size: 20px"
+    >
+      <section style="font-size: 14px">
+        <div class="container">
+          <ul class="nav nav-tabs">
+            <li class="active">
+              <a data-toggle="tab" href="#submenu1"> My Inquiries</a>
+            </li>
+            <li><a data-toggle="tab" href="#submenu2">My RFQs</a></li>
+          </ul>
+        </div>
+
+        <div class="tab-content">
+          <div id="submenu1" class="tab-pane fade in active">
+            <div class="bankDiv">
+              <div class="row" style="margin-left: 15px">
+                <div class="form-group filter_input" style="width: 320px">
+                  <select
+                    class="form-control form-select mt-3 input-item"
+                    style="height: 40px; width: 300px"
+                  >
+                    <option selected value="">All Inquiries</option>
+                    <option>Trash</option>
+                    <option>My Folder</option>
+                  </select>
+                </div>
+                <div class="d-flex justify-content-left h-100">
+                  <div class="searchbar">
+                    <input
+                      class="search_input"
+                      type="text"
+                      name=""
+                      style="width: 250px"
+                      placeholder="Search..."
+                    />
+                    <a href="#" class="search_icon"
+                      ><i class="fas fa-search"></i
+                    ></a>
+                  </div>
+                </div>
+                <div class="form-check form-check-inline col-sm-2">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    style="margin-left: 30px"
+                    name="inlineRadioOptions"
+                    id="inlineRadio1"
+                    value="option1"
+                  />
+                  <label class="form-check-label" for="inlineRadio1"
+                    >New Reply</label
+                  >
+                </div>
+              </div>
+
+              <div class="row table-head-product">
+                <div class="col-sm-6">Inquiry</div>
+                <div class="col-sm-4">Send to</div>
+                <div class="col-sm-2">Action</div>
+              </div>
+
+              <section>
+                <div
+                  class="inq-qutations"
+                  style="margin-top: 20px; height: auto"
+                >
+                  <div class="row inq-header">
+                    <div class="col-sm-4">
+                      <div class="productId-date" style="">
+                        2021-06-04 5:21 ID: 92223032232237165
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="row table-body-product">
+                  <div class="col-sm-6">
+                    <div class="product-info">
+                      <div class="row">
+                        <div class="col-sm-4">
+                          <div class="form-check form-check-inline">
+                            <input
+                              class="form-check-input"
+                              type="radio"
+                              style="margin-left: 0px; margin-top: 35px"
+                              name="inlineRadioOptions"
+                              id="inlineRadio1"
+                              value="option1"
+                            />
+                          </div>
+                          <img
+                            src="https://sc04.alicdn.com/kf/H30f01a569c4d4ece8c211e5df6bc7b5c9.jpg_80x80.jpg"
+                            style="width: 90px"
+                          />
+                        </div>
+                        <div
+                          class="col-sm-8"
+                          style="font-size: 14px; padding-left: 0px"
+                        >
+                          <span> PID Report Sterilizer for ready Meals </span>
+                          <br />
+                          <br />
+                          <p><strong>1 </strong> Piece(s)</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-4">
+                    <div class="amount-product">
+                      <p><strong>SUMPOT SUN </strong></p>
+                      <p>New Reply</p>
+                    </div>
+                  </div>
+                  <div class="col-sm-2">
+                    <div class="action-on-product">
+                      <button
+                        class="btn paymentbtn"
+                        onclick="location.href='myHome.html';"
+                      >
+                        Chat Now
+                      </button>
+
+                      <div class="dropdown request-modification">
+                        <a href="#">View Inquiry Detail</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </section>
+              <div class="line-sperator"></div>
+              <section>
+                <div
+                  class="inq-qutations"
+                  style="margin-top: 20px; height: auto"
+                >
+                  <div class="row inq-header">
+                    <div class="col-sm-4">
+                      <div class="productId-date" style="">
+                        2021-06-04 5:21 ID: 92223032232237165
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="row table-body-product">
+                  <div class="col-sm-6">
+                    <div class="product-info">
+                      <div class="row">
+                        <div class="col-sm-4">
+                          <div class="form-check form-check-inline">
+                            <input
+                              class="form-check-input"
+                              type="radio"
+                              style="margin-left: 0px; margin-top: 35px"
+                              name="inlineRadioOptions"
+                              id="inlineRadio1"
+                              value="option1"
+                            />
+                          </div>
+                          <img
+                            src="https://sc04.alicdn.com/kf/H30f01a569c4d4ece8c211e5df6bc7b5c9.jpg_80x80.jpg"
+                            style="width: 90px"
+                          />
+                        </div>
+                        <div
+                          class="col-sm-8"
+                          style="font-size: 14px; padding-left: 0px"
+                        >
+                          <span> PID Report Sterilizer for ready Meals </span>
+                          <br />
+                          <br />
+                          <p><strong>1 </strong> Piece(s)</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-4">
+                    <div class="amount-product">
+                      <p><strong>SUMPOT SUN </strong></p>
+                      <p>New Reply</p>
+                    </div>
+                  </div>
+                  <div class="col-sm-2">
+                    <div class="action-on-product">
+                      <button
+                        class="btn paymentbtn"
+                        onclick="location.href='myHome.html';"
+                      >
+                        Chat Now
+                      </button>
+
+                      <div class="dropdown request-modification">
+                        <a href="#">View Inquiry Detail</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </section>
+              <div class="line-sperator"></div>
+              <section>
+                <div
+                  class="inq-qutations"
+                  style="margin-top: 20px; height: auto"
+                >
+                  <div class="row inq-header">
+                    <div class="col-sm-4">
+                      <div class="productId-date" style="">
+                        2021-06-04 5:21 ID: 92223032232237165
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="row table-body-product">
+                  <div class="col-sm-6">
+                    <div class="product-info">
+                      <div class="row">
+                        <div class="col-sm-4">
+                          <div class="form-check form-check-inline">
+                            <input
+                              class="form-check-input"
+                              type="radio"
+                              style="margin-left: 0px; margin-top: 35px"
+                              name="inlineRadioOptions"
+                              id="inlineRadio1"
+                              value="option1"
+                            />
+                          </div>
+                          <img
+                            src="https://sc04.alicdn.com/kf/H30f01a569c4d4ece8c211e5df6bc7b5c9.jpg_80x80.jpg"
+                            style="width: 90px"
+                          />
+                        </div>
+                        <div
+                          class="col-sm-8"
+                          style="font-size: 14px; padding-left: 0px"
+                        >
+                          <span> PID Report Sterilizer for ready Meals </span>
+                          <br />
+                          <br />
+                          <p><strong>1 </strong> Piece(s)</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-4">
+                    <div class="amount-product">
+                      <p><strong>SUMPOT SUN </strong></p>
+                      <p>New Reply</p>
+                    </div>
+                  </div>
+                  <div class="col-sm-2">
+                    <div class="action-on-product">
+                      <button
+                        class="btn paymentbtn"
+                        onclick="location.href='myHome.html';"
+                      >
+                        Chat Now
+                      </button>
+
+                      <div class="dropdown request-modification">
+                        <a href="#">View Inquiry Detail</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </section>
+            </div>
+          </div>
+          <div id="submenu2" class="tab-pane fade">
+            <div class="bankDiv">
+              <div class="row" style="margin-left: 15px">
+                <div class="action-on-product" style="margin-right: 10px; margin-top: 10px;">
+                  <button
+                    class="btn paymentbtn"
+                    onclick="location.href='myHome.html';"
+                  >
+                    + Post an RFQ
+                  </button>
+                </div>
+                <div class="form-group filter_input" style="width: 300px">
+                  <select
+                    class="form-control form-select mt-3 input-item"
+                    style="height: 40px; width: 300px"
+                  >
+                    <option selected value="">All Status</option>
+                    <option>Closed</option>
+                    <option>Not Paid</option>
+                    <option>Approved 24</option>
+                    <option>Completed</option>
+                    <option>Rejected</option>
+                    <option>Pending</option>
+                  </select>
+                </div>
+
+                <div class="form-check form-check-inline col-sm-2">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    style="margin-left: 30px"
+                    name="inlineRadioOptions"
+                    id="inlineRadio1"
+                    value="option1"
+                  />
+                  <label class="form-check-label" for="inlineRadio1"
+                    >New quotation</label
+                  >
+                </div>
+              </div>
+
+              <div class="row table-head-product">
+                <div class="col-sm-4">RFQ</div>
+                <div class="col-sm-3"></div>
+                <div class="col-sm-3">Quotation form</div>
+                <div class="col-sm-2">Status</div>
+              </div>
+
+              <section>
+                <div
+                  class="inq-qutations"
+                  style="margin-top: 10px; height: auto"
+                >
+                  <div class="row inq-header">
+                    <div class="col-sm-4">
+                      <div class="productId-date" style="">
+                        2021-06-04 5:21 ID: 92223032232237165
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="row table-body-product">
+                  <div class="col-sm-7">
+                    <div class="product-info">
+                      <div class="row">
+                        <div class="col-sm-3">
+                          <img
+                            src="https://sc04.alicdn.com/kf/H30f01a569c4d4ece8c211e5df6bc7b5c9.jpg_80x80.jpg"
+                            style="width: 90px"
+                          />
+                        </div>
+                        <div
+                          class="col-sm-5"
+                          style="font-size: 14px; padding-left: 0px"
+                        >
+                          <span> Medical herbs </span>
+                          <br />
+
+                          <p>250 kilogram (s)</p>
+                        </div>
+                        <div
+                          class="col-sm-4"
+                          style="font-size: 14px; padding-left: 0px"
+                        >
+                          <p>Completeness Fair</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-3">
+                    <div class="amount-product">
+                      <p><strong>10 </strong> Quotes Received , <p style="color: #F7941D;">7 New</p></p>
+                      
+                    </div>
+                  </div>
+                  <div class="col-sm-2">
+                    <div class="action-on-product">
+                      <p style="color: green; text-align: right; padding-right: 10px;">Approved</p>
+                      <button
+                        class="btn paymentbtn"
+                        onclick="location.href='myHome.html';"
+                      >
+                        View Quotes
+                      </button>
+
+                      <div class="dropdown request-modification" style="text-align: right; width: 130px;" >
+                        <a href="#" >View this RFQ</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </section>
+              <div class="line-sperator"></div>
+              <section>
+                <div
+                  class="inq-qutations"
+                  style="margin-top: 10px; height: auto"
+                >
+                  <div class="row inq-header">
+                    <div class="col-sm-4">
+                      <div class="productId-date" style="">
+                        2021-06-04 5:21 ID: 92223032232237165
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="row table-body-product">
+                  <div class="col-sm-7">
+                    <div class="product-info">
+                      <div class="row">
+                        <div class="col-sm-3">
+                          <img
+                            src="https://sc04.alicdn.com/kf/H30f01a569c4d4ece8c211e5df6bc7b5c9.jpg_80x80.jpg"
+                            style="width: 90px"
+                          />
+                        </div>
+                        <div
+                          class="col-sm-5"
+                          style="font-size: 14px; padding-left: 0px"
+                        >
+                          <span> Medical herbs </span>
+                          <br />
+
+                          <p>250 kilogram (s)</p>
+                        </div>
+                        <div
+                          class="col-sm-4"
+                          style="font-size: 14px; padding-left: 0px"
+                        >
+                          <p>Completeness Fair</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-3">
+                    <div class="amount-product">
+                      <p><strong>10 </strong> Quotes Received , <p style="color: #F7941D;">7 New</p></p>
+                      
+                    </div>
+                  </div>
+                  <div class="col-sm-2">
+                    <div class="action-on-product">
+                      <p style="color: green; text-align: right; padding-right: 10px;">Approved</p>
+                      <button
+                        class="btn paymentbtn"
+                        onclick="location.href='myHome.html';"
+                      >
+                        View Quotes
+                      </button>
+
+                      <div class="dropdown request-modification" style="text-align: right; width: 130px;" >
+                        <a href="#" >View this RFQ</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </section>
+
+              <div class="line-sperator"></div>
+              <section>
+                <div
+                  class="inq-qutations"
+                  style="margin-top: 10px; height: auto"
+                >
+                  <div class="row inq-header">
+                    <div class="col-sm-4">
+                      <div class="productId-date" style="">
+                        2021-06-04 5:21 ID: 92223032232237165
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="row table-body-product">
+                  <div class="col-sm-7">
+                    <div class="product-info">
+                      <div class="row">
+                        <div class="col-sm-3">
+                          <img
+                            src="https://sc04.alicdn.com/kf/H30f01a569c4d4ece8c211e5df6bc7b5c9.jpg_80x80.jpg"
+                            style="width: 90px"
+                          />
+                        </div>
+                        <div
+                          class="col-sm-5"
+                          style="font-size: 14px; padding-left: 0px"
+                        >
+                          <span> Medical herbs </span>
+                          <br />
+
+                          <p>250 kilogram (s)</p>
+                        </div>
+                        <div
+                          class="col-sm-4"
+                          style="font-size: 14px; padding-left: 0px"
+                        >
+                          <p>Completeness Fair</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-3">
+                    <div class="amount-product">
+                      <p><strong>10 </strong> Quotes Received , <p style="color: #F7941D;">7 New</p></p>
+                      
+                    </div>
+                  </div>
+                  <div class="col-sm-2">
+                    <div class="action-on-product">
+                      <p style="color: green; text-align: right; padding-right: 10px;">Approved</p>
+                      <button
+                        class="btn paymentbtn"
+                        onclick="location.href='myHome.html';"
+                      >
+                        View Quotes
+                      </button>
+
+                      <div class="dropdown request-modification" style="text-align: right; width: 130px;" >
+                        <a href="#" >View this RFQ</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </section>
+            </div>
+          </div>
+        </div>
+      </section>
+    </section>
+
+    <script src="script.js"></script>
+    <script></script>
+  </body>
+</html>

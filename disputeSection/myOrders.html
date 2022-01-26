@@ -1,0 +1,1660 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <!----======== CSS ======== -->
+
+    <!----===== Boxicons CSS ===== -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+
+    <title>Orders Section</title>
+
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav class="sidebar">
+      <header>
+        <div class="image-text">
+          <span class="image">
+            <img src="logo.png" alt="" />
+          </span>
+
+          <div class="text logo-text">
+            <span class="name">B2B</span>
+            <span class="profession">First Choice</span>
+          </div>
+        </div>
+      </header>
+
+      <div class="menu-bar">
+        <div class="menu">
+          <li class="search-box">
+            <i class="bx bx-search icon"></i>
+            <input type="text" placeholder="Search..." />
+          </li>
+
+          <ul class="menu-links sidebarLink">
+            <li class="nav-link">
+              <a href="myHome.html">
+                <i class="bx bx-home-alt icon"></i>
+                <span class="text nav-text">My Home</span>
+              </a>
+            </li>
+
+            <li class="nav-link sidebarLink">
+              <a href="myMessages.html">
+                <i class="bx bx-bell icon"></i>
+
+                <span class="text nav-text">My Messages</span>
+              </a>
+            </li>
+
+            <li class="nav-link sidebarLink actineLink">
+              <a href="#">
+                <i class="bx bx-bar-chart-alt-2 icon"></i>
+                <span class="text nav-text">My Orders</span>
+              </a>
+            </li>
+
+            <li class="nav-link sidebarLink">
+              <a href="mytransactions.html">
+                <i class="bx bx-pie-chart-alt icon"></i>
+                <span class="text nav-text">My Transactions</span>
+              </a>
+            </li>
+
+            <li class="nav-link sidebarLink">
+              <a href="myBuyingLeads.html">
+                <i class="bx bx-heart icon"></i>
+                <span class="text nav-text">My Buying Leads</span>
+              </a>
+            </li>
+
+            <li class="nav-link sidebarLink">
+              <a href="myList.html">
+                <i class="bx bx-wallet icon"></i>
+                <span class="text nav-text">My List</span>
+              </a>
+            </li>
+            <li class="nav-link sidebarLink">
+              <a href="myContactInfo.html">
+                <i class="bx bx-wallet icon"></i>
+                <span class="text nav-text">My Contact Info</span>
+              </a>
+            </li>
+            <li class="nav-link sidebarLink">
+              <a href="myTradeServices.html">
+                <i class="bx bx-wallet icon"></i>
+                <span class="text nav-text">My Trade Services</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <section
+      class="home"
+      style="width: 1110px"
+      style="margin-top: 20px; font-size: 20px"
+    >
+      <ul class="disputeNav" style="font-size: 17px; background-color: white;">
+        <li class="active dispute_link">All Orders</li>
+        <li class="dispute_link" onclick="location.href='refundRequest.html';">
+          Refund Requests
+        </li>
+        <li class="dispute_link" onclick="location.href='reviews.html';">Reviews</li>
+      </ul>
+      <section>
+        <div class="container" style="font-size: 14px">
+          <ul class="nav nav-tabs">
+            <li class="active">
+              <a data-toggle="tab" href="#menu1">My Order</a>
+            </li>
+            <li><a data-toggle="tab" href="#menu2">Repurchase</a></li>
+            <li><a data-toggle="tab" href="#menu3">Not Yet Confirmed</a></li>
+            <li><a data-toggle="tab" href="#menu4">Not Paid</a></li>
+            <li><a data-toggle="tab" href="#menu5">To be Delivered</a></li>
+            <li><a data-toggle="tab" href="#menu6">Awaiting Reception</a></li>
+            <li><a data-toggle="tab" href="#menu7">Disputed</a></li>
+            <li><a data-toggle="tab" href="#menu8">Concluded/Closed</a></li>
+          </ul>
+
+          <div class="tab-content">
+            <div id="menu1" class="tab-pane fade in active">
+              <div >
+                <div class="container h-100" style="background-color: white;">
+                  <div class="d-flex justify-content-left h-100" style="margin-left: 60px;">
+                    <div class="searchbar" style="width: 870px;">
+                      <input
+                        class="search_input"
+                        type="text"
+                        name=""
+                        placeholder="Search by: Account, Email, Order ID, Product Name.."
+                      />
+                      <a href="#" class="search_icon"
+                        ><i class="fas fa-search"></i
+                      ></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="form-filter" style="height: auto; width 400px; background-color: white; padding: 10px; padding-left: 20px;  border-radius: 2px;">
+                <div style="padding-left: 70px;">
+                  <div class="row">
+                    <div class="form-group filter_input">
+                      <select
+                        class="form-control form-select mt-3 input-item"
+                        style="height: 40px"
+                      >
+                        <option selected disabled value="">
+                          Bussiness Source..
+                        </option>
+                        <option>Direct Request</option>
+                        <option>Inquiry Request</option>
+                        <option>OneTouch</option>
+                        <option>Direct Order</option>
+                      </select>
+                    </div>
+                    <div style="width: 70px"></div>
+                    <div class="form-group filter_input">
+                      <select
+                        class="form-control form-select mt-3 input-item"
+                        style="height: 40px"
+                      >
+                        <option selected disabled value="">
+                          Currency type..
+                        </option>
+                        <option>USD</option>
+                        <option>CNY</option>
+                        <option>EUR</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="form-group filter_input">
+                      <select
+                        class="form-control form-select mt-3 input-item"
+                        style="height: 40px"
+                      >
+                        <option selected disabled value="">
+                          Request Amount..
+                        </option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                      </select>
+                    </div>
+                    <div style="width: 70px"></div>
+                    <div class="form-group filter_input">
+                      <select
+                        class="form-control form-select mt-3 input-item"
+                        style="height: 40px"
+                      >
+                        <option selected disabled value="">
+                          Create Request Time..
+                        </option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="form-group filter_input">
+                      <select
+                        class="form-control form-select mt-3 input-item"
+                        style="height: 40px"
+                      >
+                        <option selected disabled value="">
+                          Request Type..
+                        </option>
+                        <option>Distribution center Request</option>
+                        <option>Test Request</option>
+                        <option>Payment Terms</option>
+                        <option>Direct Pay Request</option>
+                        <option>Letter of Credit</option>
+                      </select>
+                    </div>
+                    <div style="width: 70px"></div>
+                    <div class="form-group filter_input">
+                      <select
+                        class="form-control form-select mt-3 input-item"
+                        style="height: 40px"
+                      >
+                        <option selected disabled value="">
+                          Request Status..
+                        </option>
+                        <option disabled>
+                          <strong>Seller to do :</strong>
+                        </option>
+                        <option class="submenuOption">Processing (0)</option>
+                        <option class="submenuOption">
+                          Waiting for Order Confirmation
+                        </option>
+                        <option class="submenuOption">
+                          Waiting for Payment Contract (0)
+                        </option>
+                        <option class="submenuOption">
+                          Waiting for Draft Constract (0)
+                        </option>
+                        <option disabled>Buyer to do :</option>
+                        <option class="submenuOption">
+                          To be confirmed (0)
+                        </option>
+                        <option class="submenuOption">Unpaid (0)</option>
+                        <option class="submenuOption">Shipped (0)</option>
+                        <option class="submenuOption">Review (0)</option>
+                        <option disabled>Request Status :</option>
+
+                        <option class="submenuOption">Completed (1)</option>
+                        <option class="submenuOption">Closed (1)</option>
+                        <option class="submenuOption">Delivering (0)</option>
+                        <option class="submenuOption">Loaning (0)</option>
+                        <option class="submenuOption">refund (0)</option>
+                        <option class="submenuOption">Chargeback (0)</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-sm-2">Request Service</div>
+                    <div class="form-check form-check-inline col-sm-2">
+                      <input
+                        class="form-check-input"
+                        type="radio"
+                        name="inlineRadioOptions"
+                        id="inlineRadio1"
+                        value="option1"
+                      />
+                      <label class="form-check-label" for="inlineRadio1"
+                        >Dispatch at Once</label
+                      >
+                    </div>
+                    <div class="form-check form-check-inline col-sm-2">
+                      <input
+                        class="form-check-input"
+                        type="radio"
+                        name="inlineRadioOptions"
+                        id="inlineRadio2"
+                        value="option2"
+                      />
+                      <label class="form-check-label" for="inlineRadio2"
+                        >Delivery at Once</label
+                      >
+                    </div>
+                    <div class="form-check form-check-inline col-sm-2">
+                      <input
+                        class="form-check-input"
+                        type="radio"
+                        name="inlineRadioOptions"
+                        id="inlineRadio2"
+                        value="option2"
+                      />
+                      <label class="form-check-label" for="inlineRadio2"
+                        >Simple Return</label
+                      >
+                    </div>
+                  </div>
+                </div>
+                  <div class="row table-head-product">
+                    <div class="col-sm-2"> About Seller
+                    </div>
+                    <div class="col-sm-3"> About Poduct
+                    </div>
+                    <div class="col-sm-2"> Amount
+                    </div>
+                    <div class="col-sm-3"> Status
+                    </div>
+                    <div class="col-sm-2"> Action
+                    </div>
+                  </div>
+                  <section>
+                    <div class="inq-qutations " style="margin-top: 20px; height: 230px;">
+                      <div class="row inq-header">
+                        <div class="col-sm-4">
+                          <div  class="productId-date" style="">
+                            Order No. 92223032232237165 | 2021-06-04
+                          </div>
+                        </div>
+                        <div class="col-sm-5"></div>
+                        <div class="col-sm-3">
+                          <div class="inq-quat-textin" style="padding-top: 20px; padding-left: 140px;">
+                            
+                            <a><span class="quat-textin"> See More </span></a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class ="line-sperator"></div>
+                      <div class="row table-body-product" >
+                    
+                        <div class="col-sm-2"> 
+                          <div class="about-seller">
+                          <a href="#"> Zhejiang Honghui Capsule Co. Ltd.</a>
+                          <a href="#"> Supplier Report</a>
+                          <p><i class="fas fa-user-tie"></i> Summer Zang </a> 
+                            <div class="row">
+                              <div class="col-sm-3" style="width:25px; padding-top: 10px; padding-right: 5px;">
+                                <img src="logo.png" alt="" style="width:30px; " />
+                              </div>
+                              <div class="col-sm-9">
+                                <p  class="chatoption"></i> Leave me a Message! </p>
+                              </div>
+                            </div>
+                          
+                          </div>
+                        </div>
+                        <div class="col-sm-3"> 
+                          <div class="product-info">
+                            <div class="row">
+                              <div class="col-sm-4">
+                                <img src="https://sc04.alicdn.com/kf/H30f01a569c4d4ece8c211e5df6bc7b5c9.jpg_80x80.jpg" style="width: 80px;">
+                              </div>
+                              <div class="col-sm-8">
+                                <span> 18/410 24/410 28/410 Fine Mist Sprayer For Plastic..
+                                  Color:Black,Specifications:18/41 5
+                                  </span>
+                                <p><strong> USD 0.06 x 1000 </strong> </p>
+                              </div>
+                            </div>
+                            <p> Total : 1 product(s)</p>
+                          </div>
+                        </div>
+                        <div class="col-sm-2"> 
+                          <div class="amount-product">
+                            <p> <strong>USD 3400.00 </strong></p>
+                            <p>(initial payment USD 3400.00)</p>
+                          </div>
+                        </div>
+                        <div class="col-sm-3">
+                          <div class="amount-product">
+                            <p> <strong>Waiting for Payment</strong></p>
+                            
+                          </div>
+                        </div>
+                        <div class="col-sm-2"> 
+                          <div class="action-on-product">
+                            <button class="btn paymentbtn" onclick="location.href='myHome.html';">Make payment</button>
+                            
+                            <div class="dropdown request-modification">
+                              <button class="dropbtn"> Modify Request <i class="fas fa-caret-down"></i></button>
+                              <div class="dropdown-content">
+                                <a href="#">Modify Request</a>
+                                <a href="#">Request Cancel</a>
+                                
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      
+                    </div>
+                  </section>
+                  <section >
+                    <div class="inq-qutations " style="margin-top: 20px; height: 230px; background-color: rgb(248, 240, 240);">
+                      <div class="row inq-header">
+                        <div class="col-sm-4">
+                          <div  class="productId-date" style="">
+                            Order No. 92223032232237165 | 2021-06-04
+                          </div>
+                        </div>
+                        <div class="col-sm-5"></div>
+                        <div class="col-sm-3">
+                          <div class="inq-quat-textin" style="padding-top: 20px; padding-left: 140px;">
+                            
+                            <a><span class="quat-textin"> See More </span></a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class ="line-sperator"></div>
+                      <div class="row table-body-product" >
+                    
+                        <div class="col-sm-2"> 
+                          <div class="about-seller">
+                          <a href="#"> Zhejiang Honghui Capsule Co. Ltd.</a>
+                          <a href="#"> Supplier Report</a>
+                          <p><i class="fas fa-user-tie"></i> Summer Zang </a> 
+                            <div class="row">
+                              <div class="col-sm-3" style="width:25px; padding-top: 10px; padding-right: 5px;">
+                                <img src="logo.png" alt="" style="width:30px; " />
+                              </div>
+                              <div class="col-sm-9">
+                                <p  class="chatoption"></i> Leave me a Message! </p>
+                              </div>
+                            </div>
+                          
+                          </div>
+                        </div>
+                        <div class="col-sm-3"> 
+                          <div class="product-info">
+                            <div class="row">
+                              <div class="col-sm-4">
+                                <img src="https://sc04.alicdn.com/kf/H30f01a569c4d4ece8c211e5df6bc7b5c9.jpg_80x80.jpg" style="width: 80px;">
+                              </div>
+                              <div class="col-sm-8">
+                                <span> 18/410 24/410 28/410 Fine Mist Sprayer For Plastic..
+                                  Color:Black,Specifications:18/41 5
+                                  </span>
+                                <p><strong> USD 0.06 x 1000 </strong> </p>
+                              </div>
+                            </div>
+                            <p> Total : 1 product(s)</p>
+                          </div>
+                        </div>
+                        <div class="col-sm-2"> 
+                          <div class="amount-product">
+                            <p> <strong>USD 3400.00 </strong></p>
+                            <p>(initial payment USD 3400.00)</p>
+                          </div>
+                        </div>
+                        <div class="col-sm-3">
+                          <div class="amount-product">
+                            <p> <strong>Waiting for Payment</strong></p>
+                            
+                          </div>
+                        </div>
+                        <div class="col-sm-2"> 
+                          <div class="action-on-product">
+                            <button class="btn paymentbtn" onclick="location.href='myHome.html';">Make payment</button>
+                            
+                            <div class="dropdown request-modification">
+                              <button class="dropbtn"> Modify Request <i class="fas fa-caret-down"></i></button>
+                              <div class="dropdown-content">
+                                <a href="#">Modify Request</a>
+                                <a href="#">Request Cancel</a>
+                                
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      
+                    </div>
+                  </section>
+                  
+                </div>
+              </div>
+            </div>
+
+            <div id="menu2" class="tab-pane fade">
+              <div class= "row">
+              <div  class="col-sm-5" style="height:150px; width : 430px; background-color: white; border: 0.5px solid gray; border-radius: 4px;">
+                <div class="row">
+                  <div class="col-sm-4">
+                    <img src="https://sc04.alicdn.com/kf/H30f01a569c4d4ece8c211e5df6bc7b5c9.jpg_80x80.jpg" style="width: 145px;">
+                  </div>
+                  <div class="col-sm-8" style="padding:10px;">
+                    <span> 18/410 24/410 28/410 Fine Mist Sprayer For Plastic..
+                      Color:Black,Specifications:18/41 5
+                      </span>
+                    <p><strong> USD 0.06 x 1000 </strong> </p>
+                    <br>
+                    <div class="row">
+                      <div class="col-sm-2" style="width:25px; padding-top: 0px;">
+                        <img src="logo.png" alt="" style="width:30px; " />
+                      </div>
+                      <div class="col-sm-10">
+                        <p  class="chatoption"></i> Leave me a Message! </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-1"></div>
+              <div  class="col-sm-5" style="height:150px; width : 430px; background-color: white; border: 0.5px solid gray; border-radius: 4px;">
+                <div class="row">
+                  <div class="col-sm-4">
+                    <img src="https://sc04.alicdn.com/kf/H30f01a569c4d4ece8c211e5df6bc7b5c9.jpg_80x80.jpg" style="width: 145px;">
+                  </div>
+                  <div class="col-sm-8" style="padding:10px;">
+                    <span> 18/410 24/410 28/410 Fine Mist Sprayer For Plastic..
+                      Color:Black,Specifications:18/41 5
+                      </span>
+                    <p><strong> USD 0.06 x 1000 </strong> </p>
+                    <br>
+                    <div class="row">
+                      <div class="col-sm-2" style="width:25px; padding-top: 0px;">
+                        <img src="logo.png" alt="" style="width:30px; " />
+                      </div>
+                      <div class="col-sm-10">
+                        <p  class="chatoption"></i> Leave me a Message! </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            </div>
+            <div id="menu3" class="tab-pane fade">
+              <div >
+                
+                <div
+                  class="form-filter"
+                  style="height: auto; width 400px; background-color: white; padding: 10px; padding-left: 15px;  border-radius: 2px;"
+                >
+                  <div class="row table-head-product">
+                    <div class="col-sm-2"> About Seller
+                    </div>
+                    <div class="col-sm-3"> About Poduct
+                    </div>
+                    <div class="col-sm-2"> Amount
+                    </div>
+                    <div class="col-sm-3"> Status
+                    </div>
+                    <div class="col-sm-2"> Action
+                    </div>
+                  </div>
+                  <section>
+                    <div class="inq-qutations " style="margin-top: 20px; height: 230px;">
+                      <div class="row inq-header">
+                        <div class="col-sm-4">
+                          <div  class="productId-date" style="">
+                            Order No. 92223032232237165 | 2021-06-04
+                          </div>
+                        </div>
+                        <div class="col-sm-5"></div>
+                        <div class="col-sm-3">
+                          <div class="inq-quat-textin" style="padding-top: 20px; padding-left: 140px;">
+                            
+                            <a><span class="quat-textin"> See More </span></a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class ="line-sperator"></div>
+                      <div class="row table-body-product" >
+                    
+                        <div class="col-sm-2"> 
+                          <div class="about-seller">
+                          <a href="#"> Zhejiang Honghui Capsule Co. Ltd.</a>
+                          <a href="#"> Supplier Report</a>
+                          <p><i class="fas fa-user-tie"></i> Summer Zang </a> 
+                            <div class="row">
+                              <div class="col-sm-3" style="width:25px; padding-top: 10px; padding-right: 5px;">
+                                <img src="logo.png" alt="" style="width:30px; " />
+                              </div>
+                              <div class="col-sm-9">
+                                <p  class="chatoption"></i> Leave me a Message! </p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-sm-3"> 
+                          <div class="product-info">
+                            <div class="row">
+                              <div class="col-sm-4">
+                                <img src="https://sc04.alicdn.com/kf/H30f01a569c4d4ece8c211e5df6bc7b5c9.jpg_80x80.jpg" style="width: 80px;">
+                              </div>
+                              <div class="col-sm-8">
+                                <span> 18/410 24/410 28/410 Fine Mist Sprayer For Plastic..
+                                  Color:Black,Specifications:18/41 5
+                                  </span>
+                                <p><strong> USD 0.06 x 1000 </strong> </p>
+                              </div>
+                            </div>
+                            <p> Total : 1 product(s)</p>
+                          </div>
+                        </div>
+                        <div class="col-sm-2"> 
+                          <div class="amount-product">
+                            <p> <strong>USD 3400.00 </strong></p>
+                            <p>(initial payment USD 3400.00)</p>
+                          </div>
+                        </div>
+                        <div class="col-sm-3">
+                          <div class="amount-product">
+                            <p> <strong>Waiting for Payment</strong></p>
+                            
+                          </div>
+                        </div>
+                        <div class="col-sm-2"> 
+                          <div class="action-on-product">
+                            <button class="btn paymentbtn" onclick="location.href='myHome.html';">Make payment</button>
+                          </div>
+                          <div class="dropdown request-modification">
+                            <button class="dropbtn"> Modify Request <i class="fas fa-caret-down"></i></button>
+                            <div class="dropdown-content">
+                              <a href="#">Modify Request</a>
+                              <a href="#">Request Cancel</a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </section>
+                  <section >
+                    <div class="inq-qutations " style="margin-top: 20px; height: 230px; background-color: rgb(248, 240, 240);">
+                      <div class="row inq-header">
+                        <div class="col-sm-4">
+                          <div  class="productId-date" style="">
+                            Order No. 92223032232237165 | 2021-06-04
+                          </div>
+                        </div>
+                        <div class="col-sm-5"></div>
+                        <div class="col-sm-3">
+                          <div class="inq-quat-textin" style="padding-top: 20px; padding-left: 140px;">
+                            
+                            <a><span class="quat-textin"> See More </span></a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class ="line-sperator"></div>
+                      <div class="row table-body-product" >
+                    
+                        <div class="col-sm-2"> 
+                          <div class="about-seller">
+                          <a href="#"> Zhejiang Honghui Capsule Co. Ltd.</a>
+                          <a href="#"> Supplier Report</a>
+                          <p><i class="fas fa-user-tie"></i> Summer Zang </a> 
+                            <div class="row">
+                              <div class="col-sm-3" style="width:25px; padding-top: 10px; padding-right: 5px;">
+                                <img src="logo.png" alt="" style="width:30px; " />
+                              </div>
+                              <div class="col-sm-9">
+                                <p  class="chatoption"></i> Leave me a Message! </p>
+                              </div>
+                            </div>
+                          
+                          </div>
+                        </div>
+                        <div class="col-sm-3"> 
+                          <div class="product-info">
+                            <div class="row">
+                              <div class="col-sm-4">
+                                <img src="https://sc04.alicdn.com/kf/H30f01a569c4d4ece8c211e5df6bc7b5c9.jpg_80x80.jpg" style="width: 80px;">
+                              </div>
+                              <div class="col-sm-8">
+                                <span> 18/410 24/410 28/410 Fine Mist Sprayer For Plastic..
+                                  Color:Black,Specifications:18/41 5
+                                  </span>
+                                <p><strong> USD 0.06 x 1000 </strong> </p>
+                              </div>
+                            </div>
+                            <p> Total : 1 product(s)</p>
+                          </div>
+                        </div>
+                        <div class="col-sm-2"> 
+                          <div class="amount-product">
+                            <p> <strong>USD 3400.00 </strong></p>
+                            <p>(initial payment USD 3400.00)</p>
+                          </div>
+                        </div>
+                        <div class="col-sm-3">
+                          <div class="amount-product">
+                            <p> <strong>Waiting for Payment</strong></p>
+                            
+                          </div>
+                        </div>
+                        <div class="col-sm-2"> 
+                          <div class="action-on-product">
+                            <button class="btn paymentbtn" onclick="location.href='myHome.html';">Make payment</button>
+                            
+                            <div class="dropdown request-modification">
+                              <button class="dropbtn"> Modify Request <i class="fas fa-caret-down"></i></button>
+                              <div class="dropdown-content">
+                                <a href="#">Modify Request</a>
+                                <a href="#">Request Cancel</a>
+                                
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      
+                    </div>
+                  </section>
+                </div>
+              </div>
+            </div>
+            <div id="menu4" class="tab-pane fade">
+              <div >
+                
+                <div
+                  class="form-filter"
+                  style="height: auto; width 400px; background-color: white; padding: 10px; padding-left: 15px;  border-radius: 2px;"
+                >
+                  <div class="row table-head-product">
+                    <div class="col-sm-2"> About Seller
+                    </div>
+                    <div class="col-sm-3"> About Poduct
+                    </div>
+                    <div class="col-sm-2"> Amount
+                    </div>
+                    <div class="col-sm-3"> Status
+                    </div>
+                    <div class="col-sm-2"> Action
+                    </div>
+                  </div>
+                  <section>
+                    <div class="inq-qutations " style="margin-top: 20px; height: 230px;">
+                      <div class="row inq-header">
+                        <div class="col-sm-4">
+                          <div  class="productId-date" style="">
+                            Order No. 92223032232237165 | 2021-06-04
+                          </div>
+                        </div>
+                        <div class="col-sm-5"></div>
+                        <div class="col-sm-3">
+                          <div class="inq-quat-textin" style="padding-top: 20px; padding-left: 140px;">
+                            
+                            <a><span class="quat-textin"> See More </span></a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class ="line-sperator"></div>
+                      <div class="row table-body-product" >
+                    
+                        <div class="col-sm-2"> 
+                          <div class="about-seller">
+                          <a href="#"> Zhejiang Honghui Capsule Co. Ltd.</a>
+                          <a href="#"> Supplier Report</a>
+                          <p><i class="fas fa-user-tie"></i> Summer Zang </a> 
+                            <div class="row">
+                              <div class="col-sm-3" style="width:25px; padding-top: 10px; padding-right: 5px;">
+                                <img src="logo.png" alt="" style="width:30px; " />
+                              </div>
+                              <div class="col-sm-9">
+                                <p  class="chatoption"></i> Leave me a Message! </p>
+                              </div>
+                            </div></div>
+                        </div>
+                        <div class="col-sm-3"> 
+                          <div class="product-info">
+                            <div class="row">
+                              <div class="col-sm-4">
+                                <img src="https://sc04.alicdn.com/kf/H30f01a569c4d4ece8c211e5df6bc7b5c9.jpg_80x80.jpg" style="width: 80px;">
+                              </div>
+                              <div class="col-sm-8">
+                                <span> 18/410 24/410 28/410 Fine Mist Sprayer For Plastic..
+                                  Color:Black,Specifications:18/41 5
+                                  </span>
+                                <p><strong> USD 0.06 x 1000 </strong> </p>
+                              </div>
+                            </div>
+                            <p> Total : 1 product(s)</p>
+                          </div>
+                        </div>
+                        <div class="col-sm-2"> 
+                          <div class="amount-product">
+                            <p> <strong>USD 3400.00 </strong></p>
+                            <p>(initial payment USD 3400.00)</p>
+                          </div>
+                        </div>
+                        <div class="col-sm-3">
+                          <div class="amount-product">
+                            <p> <strong>Waiting for Payment</strong></p>
+                            
+                          </div>
+                        </div>
+                        <div class="col-sm-2"> 
+                          <div class="action-on-product">
+                            <button class="btn paymentbtn" onclick="location.href='myHome.html';">Make payment</button>
+          
+                          </div>
+                          <div class="dropdown request-modification">
+                            <button class="dropbtn"> Modify Request <i class="fas fa-caret-down"></i></button>
+                            <div class="dropdown-content">
+                              <a href="#">Modify Request</a>
+                              <a href="#">Request Cancel</a>
+                              
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </section>
+                  <section >
+                    <div class="inq-qutations " style="margin-top: 20px; height: 230px; background-color: rgb(248, 240, 240);">
+                      <div class="row inq-header">
+                        <div class="col-sm-4">
+                          <div  class="productId-date" style="">
+                            Order No. 92223032232237165 | 2021-06-04
+                          </div>
+                        </div>
+                        <div class="col-sm-5"></div>
+                        <div class="col-sm-3">
+                          <div class="inq-quat-textin" style="padding-top: 20px; padding-left: 140px;">
+                            
+                            <a><span class="quat-textin"> See More </span></a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class ="line-sperator"></div>
+                      <div class="row table-body-product" >
+                    
+                        <div class="col-sm-2"> 
+                          <div class="about-seller">
+                          <a href="#"> Zhejiang Honghui Capsule Co. Ltd.</a>
+                          <a href="#"> Supplier Report</a>
+                          <p><i class="fas fa-user-tie"></i> Summer Zang </a> 
+                            <div class="row">
+                              <div class="col-sm-3" style="width:25px; padding-top: 10px; padding-right: 5px;">
+                                <img src="logo.png" alt="" style="width:30px; " />
+                              </div>
+                              <div class="col-sm-9">
+                                <p  class="chatoption"></i> Leave me a Message! </p>
+                              </div>
+                            </div>
+                          
+                          </div>
+                        </div>
+                        <div class="col-sm-3"> 
+                          <div class="product-info">
+                            <div class="row">
+                              <div class="col-sm-4">
+                                <img src="https://sc04.alicdn.com/kf/H30f01a569c4d4ece8c211e5df6bc7b5c9.jpg_80x80.jpg" style="width: 80px;">
+                              </div>
+                              <div class="col-sm-8">
+                                <span> 18/410 24/410 28/410 Fine Mist Sprayer For Plastic..
+                                  Color:Black,Specifications:18/41 5
+                                  </span>
+                                <p><strong> USD 0.06 x 1000 </strong> </p>
+                              </div>
+                            </div>
+                            <p> Total : 1 product(s)</p>
+                          </div>
+                        </div>
+                        <div class="col-sm-2"> 
+                          <div class="amount-product">
+                            <p> <strong>USD 3400.00 </strong></p>
+                            <p>(initial payment USD 3400.00)</p>
+                          </div>
+                        </div>
+                        <div class="col-sm-3">
+                          <div class="amount-product">
+                            <p> <strong>Waiting for Payment</strong></p>
+                            
+                          </div>
+                        </div>
+                        <div class="col-sm-2"> 
+                          <div class="action-on-product">
+                            <button class="btn paymentbtn" onclick="location.href='myHome.html';">Make payment</button>
+                            
+                            <div class="dropdown request-modification">
+                              <button class="dropbtn"> Modify Request <i class="fas fa-caret-down"></i></button>
+                              <div class="dropdown-content">
+                                <a href="#">Modify Request</a>
+                                <a href="#">Request Cancel</a>
+                                
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      
+                    </div>
+                  </section>
+                </div>
+              </div>
+            </div>
+            <div id="menu5" class="tab-pane fade">
+              <div >
+                
+                <div
+                  class="form-filter"
+                  style="height: auto; width 400px; background-color: white; padding: 10px; padding-left: 15px;  border-radius: 2px;"
+                >
+                  <div class="row table-head-product">
+                    <div class="col-sm-2"> About Seller
+                    </div>
+                    <div class="col-sm-3"> About Poduct
+                    </div>
+                    <div class="col-sm-2"> Amount
+                    </div>
+                    <div class="col-sm-3"> Status
+                    </div>
+                    <div class="col-sm-2"> Action
+                    </div>
+                  </div>
+                  <section>
+                    <div class="inq-qutations " style="margin-top: 20px; height: 230px;">
+                      <div class="row inq-header">
+                        <div class="col-sm-4">
+                          <div  class="productId-date" style="">
+                            Order No. 92223032232237165 | 2021-06-04
+                          </div>
+                        </div>
+                        <div class="col-sm-5"></div>
+                        <div class="col-sm-3">
+                          <div class="inq-quat-textin" style="padding-top: 20px; padding-left: 140px;">
+                            
+                            <a><span class="quat-textin"> See More </span></a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class ="line-sperator"></div>
+                      <div class="row table-body-product" >
+                    
+                        <div class="col-sm-2"> 
+                          <div class="about-seller">
+                          <a href="#"> Zhejiang Honghui Capsule Co. Ltd.</a>
+                          <a href="#"> Supplier Report</a>
+                          <p><i class="fas fa-user-tie"></i> Summer Zang </a> 
+                            <div class="row">
+                              <div class="col-sm-3" style="width:25px; padding-top: 10px; padding-right: 5px;">
+                                <img src="logo.png" alt="" style="width:30px; " />
+                              </div>
+                              <div class="col-sm-9">
+                                <p  class="chatoption"></i> Leave me a Message! </p>
+                              </div>
+                            </div></div>
+                        </div>
+                        <div class="col-sm-3"> 
+                          <div class="product-info">
+                            <div class="row">
+                              <div class="col-sm-4">
+                                <img src="https://sc04.alicdn.com/kf/H30f01a569c4d4ece8c211e5df6bc7b5c9.jpg_80x80.jpg" style="width: 80px;">
+                              </div>
+                              <div class="col-sm-8">
+                                <span> 18/410 24/410 28/410 Fine Mist Sprayer For Plastic..
+                                  Color:Black,Specifications:18/41 5
+                                  </span>
+                                <p><strong> USD 0.06 x 1000 </strong> </p>
+                              </div>
+                            </div>
+                            <p> Total : 1 product(s)</p>
+                          </div>
+                        </div>
+                        <div class="col-sm-2"> 
+                          <div class="amount-product">
+                            <p> <strong>USD 3400.00 </strong></p>
+                            <p>(initial payment USD 3400.00)</p>
+                          </div>
+                        </div>
+                        <div class="col-sm-3">
+                          <div class="amount-product">
+                            <p> <strong>Waiting for Payment</strong></p>
+                            
+                          </div>
+                        </div>
+                        <div class="col-sm-2"> 
+                          <div class="action-on-product">
+                            <button class="btn paymentbtn" onclick="location.href='myHome.html';">Make payment</button>
+          
+                          </div>
+                          <div class="dropdown request-modification">
+                            <button class="dropbtn"> Modify Request <i class="fas fa-caret-down"></i></button>
+                            <div class="dropdown-content">
+                              <a href="#">Modify Request</a>
+                              <a href="#">Request Cancel</a>
+                              
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </section>
+                  <section >
+                    <div class="inq-qutations " style="margin-top: 20px; height: 230px; background-color: rgb(248, 240, 240);">
+                      <div class="row inq-header">
+                        <div class="col-sm-4">
+                          <div  class="productId-date" style="">
+                            Order No. 92223032232237165 | 2021-06-04
+                          </div>
+                        </div>
+                        <div class="col-sm-5"></div>
+                        <div class="col-sm-3">
+                          <div class="inq-quat-textin" style="padding-top: 20px; padding-left: 140px;">
+                            
+                            <a><span class="quat-textin"> See More </span></a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class ="line-sperator"></div>
+                      <div class="row table-body-product" >
+                    
+                        <div class="col-sm-2"> 
+                          <div class="about-seller">
+                          <a href="#"> Zhejiang Honghui Capsule Co. Ltd.</a>
+                          <a href="#"> Supplier Report</a>
+                          <p><i class="fas fa-user-tie"></i> Summer Zang </a> 
+                            <div class="row">
+                              <div class="col-sm-3" style="width:25px; padding-top: 10px; padding-right: 5px;">
+                                <img src="logo.png" alt="" style="width:30px; " />
+                              </div>
+                              <div class="col-sm-9">
+                                <p  class="chatoption"></i> Leave me a Message! </p>
+                              </div>
+                            </div>
+                          
+                          </div>
+                        </div>
+                        <div class="col-sm-3"> 
+                          <div class="product-info">
+                            <div class="row">
+                              <div class="col-sm-4">
+                                <img src="https://sc04.alicdn.com/kf/H30f01a569c4d4ece8c211e5df6bc7b5c9.jpg_80x80.jpg" style="width: 80px;">
+                              </div>
+                              <div class="col-sm-8">
+                                <span> 18/410 24/410 28/410 Fine Mist Sprayer For Plastic..
+                                  Color:Black,Specifications:18/41 5
+                                  </span>
+                                <p><strong> USD 0.06 x 1000 </strong> </p>
+                              </div>
+                            </div>
+                            <p> Total : 1 product(s)</p>
+                          </div>
+                        </div>
+                        <div class="col-sm-2"> 
+                          <div class="amount-product">
+                            <p> <strong>USD 3400.00 </strong></p>
+                            <p>(initial payment USD 3400.00)</p>
+                          </div>
+                        </div>
+                        <div class="col-sm-3">
+                          <div class="amount-product">
+                            <p> <strong>Waiting for Payment</strong></p>
+                            
+                          </div>
+                        </div>
+                        <div class="col-sm-2"> 
+                          <div class="action-on-product">
+                            <button class="btn paymentbtn" onclick="location.href='myHome.html';">Make payment</button>
+                            
+                            <div class="dropdown request-modification">
+                              <button class="dropbtn"> Modify Request <i class="fas fa-caret-down"></i></button>
+                              <div class="dropdown-content">
+                                <a href="#">Modify Request</a>
+                                <a href="#">Request Cancel</a>
+                                
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      
+                    </div>
+                  </section>
+                </div>
+              </div>
+            </div>
+            <div id="menu6" class="tab-pane fade">
+              <div >
+                
+                <div
+                  class="form-filter"
+                  style="height: auto; width 400px; background-color: white; padding: 10px; padding-left: 15px;  border-radius: 2px;"
+                >
+                  <div class="row table-head-product">
+                    <div class="col-sm-2"> About Seller
+                    </div>
+                    <div class="col-sm-3"> About Poduct
+                    </div>
+                    <div class="col-sm-2"> Amount
+                    </div>
+                    <div class="col-sm-3"> Status
+                    </div>
+                    <div class="col-sm-2"> Action
+                    </div>
+                  </div>
+                  <section>
+                    <div class="inq-qutations " style="margin-top: 20px; height: 230px;">
+                      <div class="row inq-header">
+                        <div class="col-sm-4">
+                          <div  class="productId-date" style="">
+                            Order No. 92223032232237165 | 2021-06-04
+                          </div>
+                        </div>
+                        <div class="col-sm-5"></div>
+                        <div class="col-sm-3">
+                          <div class="inq-quat-textin" style="padding-top: 20px; padding-left: 140px;">
+                            
+                            <a><span class="quat-textin"> See More </span></a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class ="line-sperator"></div>
+                      <div class="row table-body-product" >
+                    
+                        <div class="col-sm-2"> 
+                          <div class="about-seller">
+                          <a href="#"> Zhejiang Honghui Capsule Co. Ltd.</a>
+                          <a href="#"> Supplier Report</a>
+                          <p><i class="fas fa-user-tie"></i> Summer Zang </a> 
+                            <div class="row">
+                              <div class="col-sm-3" style="width:25px; padding-top: 10px; padding-right: 5px;">
+                                <img src="logo.png" alt="" style="width:30px; " />
+                              </div>
+                              <div class="col-sm-9">
+                                <p  class="chatoption"></i> Leave me a Message! </p>
+                              </div>
+                            </div></div>
+                        </div>
+                        <div class="col-sm-3"> 
+                          <div class="product-info">
+                            <div class="row">
+                              <div class="col-sm-4">
+                                <img src="https://sc04.alicdn.com/kf/H30f01a569c4d4ece8c211e5df6bc7b5c9.jpg_80x80.jpg" style="width: 80px;">
+                              </div>
+                              <div class="col-sm-8">
+                                <span> 18/410 24/410 28/410 Fine Mist Sprayer For Plastic..
+                                  Color:Black,Specifications:18/41 5
+                                  </span>
+                                <p><strong> USD 0.06 x 1000 </strong> </p>
+                              </div>
+                            </div>
+                            <p> Total : 1 product(s)</p>
+                          </div>
+                        </div>
+                        <div class="col-sm-2"> 
+                          <div class="amount-product">
+                            <p> <strong>USD 3400.00 </strong></p>
+                            <p>(initial payment USD 3400.00)</p>
+                          </div>
+                        </div>
+                        <div class="col-sm-3">
+                          <div class="amount-product">
+                            <p> <strong>Waiting for Payment</strong></p>
+                            
+                          </div>
+                        </div>
+                        <div class="col-sm-2"> 
+                          <div class="action-on-product">
+                            <button class="btn paymentbtn" onclick="location.href='myHome.html';">Make payment</button>
+          
+                          </div>
+                          <div class="dropdown request-modification">
+                            <button class="dropbtn"> Modify Request <i class="fas fa-caret-down"></i></button>
+                            <div class="dropdown-content">
+                              <a href="#">Modify Request</a>
+                              <a href="#">Request Cancel</a>
+                              
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </section>
+                  <section >
+                    <div class="inq-qutations " style="margin-top: 20px; height: 230px; background-color: rgb(248, 240, 240);">
+                      <div class="row inq-header">
+                        <div class="col-sm-4">
+                          <div  class="productId-date" style="">
+                            Order No. 92223032232237165 | 2021-06-04
+                          </div>
+                        </div>
+                        <div class="col-sm-5"></div>
+                        <div class="col-sm-3">
+                          <div class="inq-quat-textin" style="padding-top: 20px; padding-left: 140px;">
+                            
+                            <a><span class="quat-textin"> See More </span></a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class ="line-sperator"></div>
+                      <div class="row table-body-product" >
+                    
+                        <div class="col-sm-2"> 
+                          <div class="about-seller">
+                          <a href="#"> Zhejiang Honghui Capsule Co. Ltd.</a>
+                          <a href="#"> Supplier Report</a>
+                          <p><i class="fas fa-user-tie"></i> Summer Zang </a> 
+                            <div class="row">
+                              <div class="col-sm-3" style="width:25px; padding-top: 10px; padding-right: 5px;">
+                                <img src="logo.png" alt="" style="width:30px; " />
+                              </div>
+                              <div class="col-sm-9">
+                                <p  class="chatoption"></i> Leave me a Message! </p>
+                              </div>
+                            </div>
+                          
+                          </div>
+                        </div>
+                        <div class="col-sm-3"> 
+                          <div class="product-info">
+                            <div class="row">
+                              <div class="col-sm-4">
+                                <img src="https://sc04.alicdn.com/kf/H30f01a569c4d4ece8c211e5df6bc7b5c9.jpg_80x80.jpg" style="width: 80px;">
+                              </div>
+                              <div class="col-sm-8">
+                                <span> 18/410 24/410 28/410 Fine Mist Sprayer For Plastic..
+                                  Color:Black,Specifications:18/41 5
+                                  </span>
+                                <p><strong> USD 0.06 x 1000 </strong> </p>
+                              </div>
+                            </div>
+                            <p> Total : 1 product(s)</p>
+                          </div>
+                        </div>
+                        <div class="col-sm-2"> 
+                          <div class="amount-product">
+                            <p> <strong>USD 3400.00 </strong></p>
+                            <p>(initial payment USD 3400.00)</p>
+                          </div>
+                        </div>
+                        <div class="col-sm-3">
+                          <div class="amount-product">
+                            <p> <strong>Waiting for Payment</strong></p>
+                            
+                          </div>
+                        </div>
+                        <div class="col-sm-2"> 
+                          <div class="action-on-product">
+                            <button class="btn paymentbtn" onclick="location.href='myHome.html';">Make payment</button>
+                            
+                            <div class="dropdown request-modification">
+                              <button class="dropbtn"> Modify Request <i class="fas fa-caret-down"></i></button>
+                              <div class="dropdown-content">
+                                <a href="#">Modify Request</a>
+                                <a href="#">Request Cancel</a>
+                                
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      
+                    </div>
+                  </section>
+                </div>
+              </div>
+            </div>
+            <div id="menu7" class="tab-pane fade">
+              <div >
+                
+                <div
+                  class="form-filter"
+                  style="height: auto; width 400px; background-color: white; padding: 10px; padding-left: 15px;  border-radius: 2px;"
+                >
+                  <div class="row table-head-product">
+                    <div class="col-sm-2"> About Seller
+                    </div>
+                    <div class="col-sm-3"> About Poduct
+                    </div>
+                    <div class="col-sm-2"> Amount
+                    </div>
+                    <div class="col-sm-3"> Status
+                    </div>
+                    <div class="col-sm-2"> Action
+                    </div>
+                  </div>
+                  <section>
+                    <div class="inq-qutations " style="margin-top: 20px; height: 230px;">
+                      <div class="row inq-header">
+                        <div class="col-sm-4">
+                          <div  class="productId-date" style="">
+                            Order No. 92223032232237165 | 2021-06-04
+                          </div>
+                        </div>
+                        <div class="col-sm-5"></div>
+                        <div class="col-sm-3">
+                          <div class="inq-quat-textin" style="padding-top: 20px; padding-left: 140px;">
+                            
+                            <a><span class="quat-textin"> See More </span></a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class ="line-sperator"></div>
+                      <div class="row table-body-product" >
+                    
+                        <div class="col-sm-2"> 
+                          <div class="about-seller">
+                          <a href="#"> Zhejiang Honghui Capsule Co. Ltd.</a>
+                          <a href="#"> Supplier Report</a>
+                          <p><i class="fas fa-user-tie"></i> Summer Zang </a> 
+                            <div class="row">
+                              <div class="col-sm-3" style="width:25px; padding-top: 10px; padding-right: 5px;">
+                                <img src="logo.png" alt="" style="width:30px; " />
+                              </div>
+                              <div class="col-sm-9">
+                                <p  class="chatoption"></i> Leave me a Message! </p>
+                              </div>
+                            </div></div>
+                        </div>
+                        <div class="col-sm-3"> 
+                          <div class="product-info">
+                            <div class="row">
+                              <div class="col-sm-4">
+                                <img src="https://sc04.alicdn.com/kf/H30f01a569c4d4ece8c211e5df6bc7b5c9.jpg_80x80.jpg" style="width: 80px;">
+                              </div>
+                              <div class="col-sm-8">
+                                <span> 18/410 24/410 28/410 Fine Mist Sprayer For Plastic..
+                                  Color:Black,Specifications:18/41 5
+                                  </span>
+                                <p><strong> USD 0.06 x 1000 </strong> </p>
+                              </div>
+                            </div>
+                            <p> Total : 1 product(s)</p>
+                          </div>
+                        </div>
+                        <div class="col-sm-2"> 
+                          <div class="amount-product">
+                            <p> <strong>USD 3400.00 </strong></p>
+                            <p>(initial payment USD 3400.00)</p>
+                          </div>
+                        </div>
+                        <div class="col-sm-3">
+                          <div class="amount-product">
+                            <p> <strong>Waiting for Payment</strong></p>
+                            
+                          </div>
+                        </div>
+                        <div class="col-sm-2"> 
+                          <div class="action-on-product">
+                            <button class="btn paymentbtn" onclick="location.href='myHome.html';">Make payment</button>
+          
+                          </div>
+                          <div class="dropdown request-modification">
+                            <button class="dropbtn"> Modify Request <i class="fas fa-caret-down"></i></button>
+                            <div class="dropdown-content">
+                              <a href="#">Modify Request</a>
+                              <a href="#">Request Cancel</a>
+                              
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </section>
+                  <section >
+                    <div class="inq-qutations " style="margin-top: 20px; height: 230px; background-color: rgb(248, 240, 240);">
+                      <div class="row inq-header">
+                        <div class="col-sm-4">
+                          <div  class="productId-date" style="">
+                            Order No. 92223032232237165 | 2021-06-04
+                          </div>
+                        </div>
+                        <div class="col-sm-5"></div>
+                        <div class="col-sm-3">
+                          <div class="inq-quat-textin" style="padding-top: 20px; padding-left: 140px;">
+                            
+                            <a><span class="quat-textin"> See More </span></a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class ="line-sperator"></div>
+                      <div class="row table-body-product" >
+                    
+                        <div class="col-sm-2"> 
+                          <div class="about-seller">
+                          <a href="#"> Zhejiang Honghui Capsule Co. Ltd.</a>
+                          <a href="#"> Supplier Report</a>
+                          <p><i class="fas fa-user-tie"></i> Summer Zang </a> 
+                            <div class="row">
+                              <div class="col-sm-3" style="width:25px; padding-top: 10px; padding-right: 5px;">
+                                <img src="logo.png" alt="" style="width:30px; " />
+                              </div>
+                              <div class="col-sm-9">
+                                <p  class="chatoption"></i> Leave me a Message! </p>
+                              </div>
+                            </div>
+                          
+                          </div>
+                        </div>
+                        <div class="col-sm-3"> 
+                          <div class="product-info">
+                            <div class="row">
+                              <div class="col-sm-4">
+                                <img src="https://sc04.alicdn.com/kf/H30f01a569c4d4ece8c211e5df6bc7b5c9.jpg_80x80.jpg" style="width: 80px;">
+                              </div>
+                              <div class="col-sm-8">
+                                <span> 18/410 24/410 28/410 Fine Mist Sprayer For Plastic..
+                                  Color:Black,Specifications:18/41 5
+                                  </span>
+                                <p><strong> USD 0.06 x 1000 </strong> </p>
+                              </div>
+                            </div>
+                            <p> Total : 1 product(s)</p>
+                          </div>
+                        </div>
+                        <div class="col-sm-2"> 
+                          <div class="amount-product">
+                            <p> <strong>USD 3400.00 </strong></p>
+                            <p>(initial payment USD 3400.00)</p>
+                          </div>
+                        </div>
+                        <div class="col-sm-3">
+                          <div class="amount-product">
+                            <p> <strong>Waiting for Payment</strong></p>
+                            
+                          </div>
+                        </div>
+                        <div class="col-sm-2"> 
+                          <div class="action-on-product">
+                            <button class="btn paymentbtn" onclick="location.href='myHome.html';">Make payment</button>
+                            
+                            <div class="dropdown request-modification">
+                              <button class="dropbtn"> Modify Request <i class="fas fa-caret-down"></i></button>
+                              <div class="dropdown-content">
+                                <a href="#">Modify Request</a>
+                                <a href="#">Request Cancel</a>
+                                
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      
+                    </div>
+                  </section>
+                </div>
+              </div>
+            </div>
+            <div id="menu8" class="tab-pane fade">
+              <div >
+                
+                <div
+                  class="form-filter"
+                  style="height: auto; width 400px; background-color: white; padding: 10px; padding-left: 15px;  border-radius: 2px;"
+                >
+                  <div class="row table-head-product">
+                    <div class="col-sm-2"> About Seller
+                    </div>
+                    <div class="col-sm-3"> About Poduct
+                    </div>
+                    <div class="col-sm-2"> Amount
+                    </div>
+                    <div class="col-sm-3"> Status
+                    </div>
+                    <div class="col-sm-2"> Action
+                    </div>
+                  </div>
+                  <section>
+                    <div class="inq-qutations " style="margin-top: 20px; height: 230px;">
+                      <div class="row inq-header">
+                        <div class="col-sm-4">
+                          <div  class="productId-date" style="">
+                            Order No. 92223032232237165 | 2021-06-04
+                          </div>
+                        </div>
+                        <div class="col-sm-5"></div>
+                        <div class="col-sm-3">
+                          <div class="inq-quat-textin" style="padding-top: 20px; padding-left: 140px;">
+                            
+                            <a><span class="quat-textin"> See More </span></a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class ="line-sperator"></div>
+                      <div class="row table-body-product" >
+                    
+                        <div class="col-sm-2"> 
+                          <div class="about-seller">
+                          <a href="#"> Zhejiang Honghui Capsule Co. Ltd.</a>
+                          <a href="#"> Supplier Report</a>
+                          <p><i class="fas fa-user-tie"></i> Summer Zang </a> 
+                            <div class="row">
+                              <div class="col-sm-3" style="width:25px; padding-top: 10px; padding-right: 5px;">
+                                <img src="logo.png" alt="" style="width:30px; " />
+                              </div>
+                              <div class="col-sm-9">
+                                <p  class="chatoption"></i> Leave me a Message! </p>
+                              </div>
+                            </div></div>
+                        </div>
+                        <div class="col-sm-3"> 
+                          <div class="product-info">
+                            <div class="row">
+                              <div class="col-sm-4">
+                                <img src="https://sc04.alicdn.com/kf/H30f01a569c4d4ece8c211e5df6bc7b5c9.jpg_80x80.jpg" style="width: 80px;">
+                              </div>
+                              <div class="col-sm-8">
+                                <span> 18/410 24/410 28/410 Fine Mist Sprayer For Plastic..
+                                  Color:Black,Specifications:18/41 5
+                                  </span>
+                                <p><strong> USD 0.06 x 1000 </strong> </p>
+                              </div>
+                            </div>
+                            <p> Total : 1 product(s)</p>
+                          </div>
+                        </div>
+                        <div class="col-sm-2"> 
+                          <div class="amount-product">
+                            <p> <strong>USD 3400.00 </strong></p>
+                            <p>(initial payment USD 3400.00)</p>
+                          </div>
+                        </div>
+                        <div class="col-sm-3">
+                          <div class="amount-product">
+                            <p> <strong>Waiting for Payment</strong></p>
+                            
+                          </div>
+                        </div>
+                        <div class="col-sm-2"> 
+                          <div class="action-on-product">
+                            <button class="btn paymentbtn" onclick="location.href='myHome.html';">Make payment</button>
+          
+                          </div>
+                          <div class="dropdown request-modification">
+                            <button class="dropbtn"> Modify Request <i class="fas fa-caret-down"></i></button>
+                            <div class="dropdown-content">
+                              <a href="#">Modify Request</a>
+                              <a href="#">Request Cancel</a>
+                              
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </section>
+                  <section >
+                    <div class="inq-qutations " style="margin-top: 20px; height: 230px; background-color: rgb(248, 240, 240);">
+                      <div class="row inq-header">
+                        <div class="col-sm-4">
+                          <div  class="productId-date" style="">
+                            Order No. 92223032232237165 | 2021-06-04
+                          </div>
+                        </div>
+                        <div class="col-sm-5"></div>
+                        <div class="col-sm-3">
+                          <div class="inq-quat-textin" style="padding-top: 20px; padding-left: 140px;">
+                            
+                            <a><span class="quat-textin"> See More </span></a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class ="line-sperator"></div>
+                      <div class="row table-body-product" >
+                    
+                        <div class="col-sm-2"> 
+                          <div class="about-seller">
+                          <a href="#"> Zhejiang Honghui Capsule Co. Ltd.</a>
+                          <a href="#"> Supplier Report</a>
+                          <p><i class="fas fa-user-tie"></i> Summer Zang </a> 
+                            <div class="row">
+                              <div class="col-sm-3" style="width:25px; padding-top: 10px; padding-right: 5px;">
+                                <img src="logo.png" alt="" style="width:30px; " />
+                              </div>
+                              <div class="col-sm-9">
+                                <p  class="chatoption"></i> Leave me a Message! </p>
+                              </div>
+                            </div>
+                          
+                          </div>
+                        </div>
+                        <div class="col-sm-3"> 
+                          <div class="product-info">
+                            <div class="row">
+                              <div class="col-sm-4">
+                                <img src="https://sc04.alicdn.com/kf/H30f01a569c4d4ece8c211e5df6bc7b5c9.jpg_80x80.jpg" style="width: 80px;">
+                              </div>
+                              <div class="col-sm-8">
+                                <span> 18/410 24/410 28/410 Fine Mist Sprayer For Plastic..
+                                  Color:Black,Specifications:18/41 5
+                                  </span>
+                                <p><strong> USD 0.06 x 1000 </strong> </p>
+                              </div>
+                            </div>
+                            <p> Total : 1 product(s)</p>
+                          </div>
+                        </div>
+                        <div class="col-sm-2"> 
+                          <div class="amount-product">
+                            <p> <strong>USD 3400.00 </strong></p>
+                            <p>(initial payment USD 3400.00)</p>
+                          </div>
+                        </div>
+                        <div class="col-sm-3">
+                          <div class="amount-product">
+                            <p> <strong>Waiting for Payment</strong></p>
+                            
+                          </div>
+                        </div>
+                        <div class="col-sm-2"> 
+                          <div class="action-on-product">
+                            <button class="btn paymentbtn" onclick="location.href='myHome.html';">Make payment</button>
+                            
+                            <div class="dropdown request-modification">
+                              <button class="dropbtn"> Modify Request <i class="fas fa-caret-down"></i></button>
+                              <div class="dropdown-content">
+                                <a href="#">Modify Request</a>
+                                <a href="#">Request Cancel</a>
+                                
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      
+                    </div>
+                  </section>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </section>
+
+    <script src="script.js"></script>
+    <script></script>
+  </body>
+</html>

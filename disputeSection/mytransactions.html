@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <!----======== CSS ======== -->
+
+    <!----===== Boxicons CSS ===== -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+
+    <title>Orders Section</title>
+
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav class="sidebar">
+      <header>
+        <div class="image-text">
+          <span class="image">
+            <img src="logo.png" alt="" />
+          </span>
+
+          <div class="text logo-text">
+            <span class="name">B2B</span>
+            <span class="profession">First Choice</span>
+          </div>
+        </div>
+      </header>
+
+      <div class="menu-bar">
+        <div class="menu">
+          <li class="search-box">
+            <i class="bx bx-search icon"></i>
+            <input type="text" placeholder="Search..." />
+          </li>
+
+          <ul class="menu-links sidebarLink">
+            <li class="nav-link">
+              <a href="myHome.html">
+                <i class="bx bx-home-alt icon"></i>
+                <span class="text nav-text">My Home</span>
+              </a>
+            </li>
+
+            <li class="nav-link sidebarLink">
+              <a href="myMessages.html">
+                <i class="bx bx-bell icon"></i>
+
+                <span class="text nav-text">My Messages</span>
+              </a>
+            </li>
+
+            <li class="nav-link sidebarLink">
+              <a href="myOrders.html">
+                <i class="bx bx-bar-chart-alt-2 icon"></i>
+                <span class="text nav-text">My Orders</span>
+              </a>
+            </li>
+
+            <li class="nav-link sidebarLink actineLink">
+              <a href="mytransactions.html">
+                <i class="bx bx-pie-chart-alt icon"></i>
+                <span class="text nav-text">My Transactions</span>
+              </a>
+            </li>
+
+            <li class="nav-link sidebarLink">
+              <a href="myBuyingLeads.html">
+                <i class="bx bx-heart icon"></i>
+                <span class="text nav-text">My Buying Leads</span>
+              </a>
+            </li>
+
+            <li class="nav-link sidebarLink">
+              <a href="myList.html">
+                <i class="bx bx-wallet icon"></i>
+                <span class="text nav-text">My List</span>
+              </a>
+            </li>
+            <li class="nav-link sidebarLink">
+              <a href="myContactInfo.html">
+                <i class="bx bx-wallet icon"></i>
+                <span class="text nav-text">My Contact Info</span>
+              </a>
+            </li>
+            <li class="nav-link sidebarLink">
+              <a href="myTradeServices.html">
+                <i class="bx bx-wallet icon"></i>
+                <span class="text nav-text">My Trade Services</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <section
+      class="home"
+      style="width: 1110px"
+      style="margin-top: 20px; font-size: 20px"
+    >
+      <ul class="disputeNav" style="font-size: 17px; background-color: white">
+        <li class="active dispute_link">Overview</li>
+        <li
+          class="dispute_link"
+          onclick="location.href='transactionStatments.html';"
+        >
+          Transaction Statments
+        </li>
+        <li class="dispute_link" onclick="location.href='manageAccounts.html';">
+          Manage Accounts
+        </li>
+      </ul>
+
+      <div class="refundHeading" style="padding-bottom: 0px; padding-top: 0px">
+        <p>Overview</p>
+        <div class="blue-notice" style="margin: 20px; margin-left: 0px">
+          <p>
+            <i class="fas fa-flag-checkered"></i> Want to learn more about
+            official B2Bfirstchoice.com success guide?
+            <a href="#"> click here </a>
+          </p>
+        </div>
+      </div>
+      <p class="subheading-div">Transaction processing</p>
+      <div class="bankDiv row processing-row">
+        <div class="col-sm-4 processing-col">
+          <div class="row">
+            <div class="col-sm-10">
+              <i class="fas fa-university"></i>
+              <p class="processing-link">
+                <a class="processing-link" href="#">
+                  Payment not yet matched to order></a
+                >
+              </p>
+              <span> USD </span> <span class="pay"> 0.00 </span>
+            </div>
+            <div class="col-sm-2"><div class="vertical-sperator"></div></div>
+          </div>
+        </div>
+
+        <div class="col-sm-4 processing-col">
+          <div class="row">
+            <div class="col-sm-10">
+              <i class="fas fa-clock"></i>
+              <p class="processing-link">
+                <a class="processing-link" href="#"> Payment processing></a>
+              </p>
+              <span> USD </span> <span class="pay"> 0.00 </span>
+            </div>
+            <div class="col-sm-2"><div class="vertical-sperator"></div></div>
+          </div>
+        </div>
+        <div class="col-sm-4 processing-col">
+          <div class="row">
+            <div class="col-sm-10">
+              <i class="fas fa-search-dollar"></i>
+              <p class="processing-link">
+                <a class="processing-link" href="#"> Refund processing></a>
+              </p>
+              <span> USD </span> <span class="pay"> 0.00 </span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <p class="subheading-div">Transaction Report</p>
+      <div class="bankDiv">
+        <div class="row" style="height: 50px">
+          <div
+            class="col-sm-2"
+            style="padding-top: 10px; padding-left: 20px; padding-right: 0px"
+          >
+            <label class="search-heading">Report Month</label>
+          </div>
+          <div class="col-sm-2">
+            <div class="form-group filter_input" style="padding-top: 10px">
+              <input
+                class="form-control form-select mt-3 input-item"
+                style="
+                  height: 40px;
+                  width: 200px;
+                  margin-top: 10px;
+                  padding-left: 0px;
+                "
+                type="date"
+                id="reportMonth"
+              />
+            </div>
+          </div>
+          <div class="col-sm-2">
+            <button
+              class="btn paymentbtn"
+              style="
+                width: 120px;
+                padding-bottom: 5px;
+                margin-left: 25px;
+                margin-top: 20px;
+              "
+              onclick="location.href='#';"
+            >
+              Export Details
+            </button>
+          </div>
+        </div>
+      </div>
+      <p class="subheading-div">Recent Transactions</p>
+      <div class="bankDiv">
+        <section style="font-size: 14px">
+          <div class="container">
+            <ul class="nav nav-tabs">
+              <li class="active">
+                <a data-toggle="tab" href="#submenu1"> Payment</a>
+              </li>
+              <li><a data-toggle="tab" href="#submenu2">Refund</a></li>
+            </ul>
+          </div>
+
+          <div class="tab-content">
+            <div id="submenu1" class="tab-pane fade in active">
+              <div>
+                <div
+                  class="row table-head-product"
+                  style="width: 1070px; font-size: 13px; text-align: left"
+                >
+                  <div class="col-sm-1.5" style="padding-right: 15px">
+                    Time Sent <br />(PST)
+                  </div>
+                  <div
+                    class="col-sm-1.5"
+                    style="padding-right: 20px; padding-left: 30px"
+                  >
+                    Time Arrived <br />(PST)
+                  </div>
+                  <div class="col-sm-3">Supplier | Transaction No</div>
+                  <div class="col-sm-1" style="padding-left: 0px">
+                    Payment Method
+                  </div>
+                  <div class="col-sm-1.5" style="padding-right: 40px">
+                    Amount
+                  </div>
+                  <div class="col-sm-1">Transaction Fee</div>
+                  <div class="col-sm-1">Exchange rate</div>
+                  <div class="col-sm-1">Status</div>
+                  <div class="col-sm-1">Actions</div>
+                </div>
+                <section>
+                  <div
+                    class="inq-qutations"
+                    style="margin-top: 20px; height: 80px"
+                  >
+                    <div
+                      class="row table-body-product"
+                      style="width: 1070px; font-size: 13px"
+                    >
+                      <div class="col-sm-1.5" style="padding-right: 30px">
+                        09/14/2021 <br />
+                        06:12AM
+                      </div>
+                      <div class="col-sm-1.5" style="padding-right: 30px">
+                        09/14/2021 <br />
+                        06:12AM
+                      </div>
+                      <div class="col-sm-3">
+                        Joyce Wang <br />
+                        17990401203210914003378002975
+                      </div>
+                      <div class="col-sm-1" style="padding-left: 0px">
+                        Credit/Debit Card
+                      </div>
+                      <div class="col-sm-1.5">
+                        USD 178.35 <br />
+                        USD 33.35 for tax
+                      </div>
+                      <div class="col-sm-1">EUR 4.57</div>
+                      <div class="col-sm-1">0.855268</div>
+                      <div class="col-sm-1">Completed</div>
+                      <div class="col-sm-1">
+                        <a class="anchor-tag" href="#"> Transaction Details </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="inq-qutations"
+                    style="margin-top: 20px; height: 80px"
+                  >
+                    <div
+                      class="row table-body-product"
+                      style="width: 1070px; font-size: 13px"
+                    >
+                      <div class="col-sm-1.5" style="padding-right: 30px">
+                        09/14/2021 <br />
+                        06:12AM
+                      </div>
+                      <div class="col-sm-1.5" style="padding-right: 30px">
+                        09/14/2021 <br />
+                        06:12AM
+                      </div>
+                      <div class="col-sm-3">
+                        Joyce Wang <br />
+                        17990401203210914003378002975
+                      </div>
+                      <div class="col-sm-1" style="padding-left: 0px">
+                        Credit/Debit Card
+                      </div>
+                      <div class="col-sm-1.5">
+                        USD 178.35 <br />
+                        USD 33.35 for tax
+                      </div>
+                      <div class="col-sm-1">EUR 4.57</div>
+                      <div class="col-sm-1">0.855268</div>
+                      <div class="col-sm-1">Completed</div>
+                      <div class="col-sm-1">
+                        <a class="anchor-tag" href="#"> Transaction Details </a>
+                      </div>
+                    </div>
+                  </div>
+                </section>
+              </div>
+            </div>
+            <div id="submenu2" class="tab-pane fade">
+              <div
+                class="row table-head-product"
+                style="width: 1070px; font-size: 13px; text-align: left"
+              >
+                <div class="col-sm-2" style="padding-right: 15px">
+                  Time Sent <br />(PST)
+                </div>
+                
+                <div class="col-sm-3">Supplier | Transaction No</div>
+                <div class="col-sm-1" style="padding-left: 0px">
+                  Refund Method
+                </div>
+                <div class="col-sm-2" style="padding-right: 40px">Amount</div>
+                <div class="col-sm-2">Refund Reason</div>
+               
+                <div class="col-sm-1">Status</div>
+                <div class="col-sm-1">Actions</div>
+              </div>
+              <div
+                class="row table-body-product"
+                style="width: 1070px; font-size: 13px; text-align: left"
+              >
+                <div class="col-sm-2" style="padding-right: 15px">
+                  Time Sent <br />(PST)
+                </div>
+                
+                <div class="col-sm-3">Supplier | Transaction No</div>
+                <div class="col-sm-1" style="padding-left: 0px">
+                  Refund Method
+                </div>
+                <div class="col-sm-2" style="padding-right: 40px">Amount</div>
+                <div class="col-sm-2">Refund Reason</div>
+               
+                <div class="col-sm-1">Status</div>
+                <div class="col-sm-1">Actions</div>
+              </div>
+              <section>
+               
+              </section>
+            </div>
+          </div>
+        </section>
+      </div>
+      <p class="subheading-div">Recent Orders</p>
+      <div class="bankDiv">
+        <section style="font-size: 14px">
+          <div class="container">
+            <ul class="nav nav-tabs">
+              <li class="active">
+                <a data-toggle="tab" href="#sub-menu-1"> Trade Assurance Orders</a>
+              </li>
+              <li><a data-toggle="tab" href="#sub-menu-2">Logistic Order</a></li>
+            </ul>
+          </div>
+
+          <div class="tab-content">
+            <div id="sub-menu-1" class="tab-pane fade in active">
+              <div class="row table-head-product">
+                <div class="col-sm-2"> Order Date (PST)
+                </div>
+                <div class="col-sm-3">Product | Supplier | Order No.
+                </div>
+                <div class="col-sm-2"> Order Amount
+                </div>
+                <div class="col-sm-1"> Paid
+                </div>
+                <div class="col-sm-2"> Status
+                </div>
+                <div class="col-sm-2"> Actions
+                </div>
+              </div>
+              <section>
+                <div class="inq-qutations " style="margin-top: 20px; height: 120px;">
+                  <div class="row table-body-product tradehover" >
+                    <div class="col-sm-2"> 
+                      <div class="product-info">
+                      <p> 12/17/2021 <br> 10:44 AM </p>
+                      </div>
+                    </div>
+                    <div class="col-sm-3"> 
+                      <div class="product-info">
+                        <p> transparent 00# 0#1# Empty vegetable capsule in warehouse for vegetarian empty hard capsule 00# 0# red to ship
+                          Supplier: summer zhang | No. 128570467501023791</p>
+                      </div>
+                    </div>
+                    <div class="col-sm-2"> 
+                      <div class="amount-product">
+                        <p> <strong>USD 3,400.00 </strong></p>
+                      
+                      </div>
+                      
+                    </div>
+                    <div class="col-sm-1"> USD 3,400.00 
+                    </div>
+                    <div class="col-sm-2">
+                      <div class="amount-product">
+                        <p> <strong>Closed</strong></p>
+                        
+                      </div>
+                    </div>
+                    <div class="col-sm-2"> 
+                      <div class="action-on-product">
+                        
+                        <div class="dropdown request-modification">
+                          <button class="dropbtn"> Order Details <i class="fas fa-caret-down"></i></button>
+                          <div class="dropdown-content">
+                            <a href="#">Order Details</a>
+                            
+                            
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  
+                </div>
+              </section>
+            </div>
+            <div id="sub-menu-2" class="tab-pane fade">
+              <div class="row table-head-product" style="margin-left:20px;">
+                <div class="col-sm-2"> Time Sent (PST)
+                </div>
+                <div class="col-sm-4">Information | Logistic No. | Order No.
+                </div>
+                <div class="col-sm-2">  Amount
+                </div>
+              
+                <div class="col-sm-2"> Status
+                </div>
+                <div class="col-sm-2"> Actions
+                </div>
+              </div>
+              <div class="row table-body-product" style="margin-left:20px;">
+                <div class="col-sm-2"> Time Sent (PST)
+                </div>
+                <div class="col-sm-4">Information | Logistic No. | Order No.
+                </div>
+                <div class="col-sm-2">  Amount
+                </div>
+              
+                <div class="col-sm-2"> Status
+                </div>
+                <div class="col-sm-2"> Actions
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </section>
+
+    <script src="script.js"></script>
+    <script></script>
+  </body>
+</html>

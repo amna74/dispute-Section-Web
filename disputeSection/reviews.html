@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <!----======== CSS ======== -->
+
+    <!----===== Boxicons CSS ===== -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+
+    <title>Orders Section</title>
+
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav class="sidebar">
+      <header>
+        <div class="image-text">
+          <span class="image">
+            <img src="logo.png" alt="" />
+          </span>
+
+          <div class="text logo-text">
+            <span class="name">B2B</span>
+            <span class="profession">First Choice</span>
+          </div>
+        </div>
+      </header>
+
+      <div class="menu-bar">
+        <div class="menu">
+          <li class="search-box">
+            <i class="bx bx-search icon"></i>
+            <input type="text" placeholder="Search..." />
+          </li>
+
+          <ul class="menu-links sidebarLink">
+            <li class="nav-link">
+              <a href="myHome.html">
+                <i class="bx bx-home-alt icon"></i>
+                <span class="text nav-text">My Home</span>
+              </a>
+            </li>
+
+            <li class="nav-link sidebarLink">
+              <a href="myMessages.html">
+                <i class="bx bx-bell icon"></i>
+
+                <span class="text nav-text">My Messages</span>
+              </a>
+            </li>
+
+            <li class="nav-link sidebarLink actineLink">
+              <a href="#">
+                <i class="bx bx-bar-chart-alt-2 icon"></i>
+                <span class="text nav-text">My Orders</span>
+              </a>
+            </li>
+
+            <li class="nav-link sidebarLink">
+              <a href="mytransactions.html">
+                <i class="bx bx-pie-chart-alt icon"></i>
+                <span class="text nav-text">My Transactions</span>
+              </a>
+            </li>
+
+            <li class="nav-link sidebarLink">
+              <a href="myBuyingLeads.html">
+                <i class="bx bx-heart icon"></i>
+                <span class="text nav-text">My Buying Leads</span>
+              </a>
+            </li>
+
+            <li class="nav-link sidebarLink">
+              <a href="myList.html">
+                <i class="bx bx-wallet icon"></i>
+                <span class="text nav-text">My List</span>
+              </a>
+            </li>
+            <li class="nav-link sidebarLink">
+              <a href="myContactInfo.html">
+                <i class="bx bx-wallet icon"></i>
+                <span class="text nav-text">My Contact Info</span>
+              </a>
+            </li>
+            <li class="nav-link sidebarLink">
+              <a href="myTradeServices.html">
+                <i class="bx bx-wallet icon"></i>
+                <span class="text nav-text">My Trade Services</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <section
+      class="home"
+      style="width: 1110px"
+      style="margin-top: 20px; font-size: 20px"
+    >
+      <ul class="disputeNav" style="font-size: 17px; background-color: white">
+        <li class="dispute_link" onclick="location.href='myOrders.html';">
+          All Orders
+        </li>
+        <li class="dispute_link" onclick="location.href='refundRequest.html';">
+          Refund Requests
+        </li>
+        <li class="active dispute_link" onclick="location.href='#';">
+          Reviews
+        </li>
+      </ul>
+      <section style="font-size: 14px">
+        <div class="container">
+          <ul class="nav nav-tabs">
+            <li class="active">
+              <a data-toggle="tab" href="#menu1">Reviewed(0)</a>
+            </li>
+            <li><a data-toggle="tab" href="#menu2">To be reviewed(0)</a></li>
+          </ul>
+        </div>
+        <div class="tab-content">
+          <div id="menu1" class="tab-pane fade in active">
+            <div>
+              <div class="row">
+                <div class="col-sm-10">
+                  <div class="d-flex justify-content-left h-100">
+                    <div class="searchbar">
+                      <input
+                        class="search_input"
+                        type="text"
+                        name=""
+                        placeholder="To search Enter Your Account, Request ID..."
+                      />
+                      <a href="#" class="search_icon"
+                        ><i class="fas fa-search"></i
+                      ></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-2">
+                  <div class="rating-rules">
+                    <a
+                      href="#"
+                      title="Rating Guidelines"
+                      data-toggle="popover"
+                      data-trigger="hover"
+                      data-content="a) B2Bfirstchoice.com will display your reviews anonymously <br /> 
+                      b) Your review may be rejected if you include comments irrelevent to business <br />
+                      c) Only one review can be modified within 25 days of submission"
+                      data-html="true"
+                    >
+                      Rating .<i class="far fa-question-circle"></i></a>
+                  </div>
+                </div>
+              </div>
+              <div
+                style="height: 0.5px; background-color: gray; width: 100%"
+              ></div>
+            </div>
+          </div>
+          <div id="menu2" class="tab-pane fade">
+            <div class="searchAreaRefund">
+              <div class="row">
+                <div class="col-sm-10">
+                  <div class="d-flex justify-content-left h-100">
+                    <div class="searchbar">
+                      <input
+                        class="search_input"
+                        type="text"
+                        name=""
+                        placeholder="To search Enter Your Account, Request ID..."
+                      />
+                      <a href="#" class="search_icon"
+                        ><i class="fas fa-search"></i
+                      ></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-2">
+                  <div class="rating-rules">
+                    <a
+                      href="#"
+                      title="Rating Guidelines"
+                      data-toggle="popover"
+                      data-trigger="hover"
+                      data-content="a) B2Bfirstchoice.com will display your reviews anonymously <br /> <br /> 
+                        b) Your review may be rejected if you include comments irrelevent to business <br /><br /> 
+                        c) Only one review can be modified within 25 days of submission"
+                      data-html="true"
+                    >
+                      Rating .<i class="far fa-question-circle"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+              <div
+                style="height: 0.5px; background-color: gray; width: 100%"
+              ></div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </section>
+
+    <script src="script.js"></script>
+    <script>
+      $(document).ready(function () {
+        $('[data-toggle="popover"]').popover();
+      });
+    </script>
+  </body>
+</html>

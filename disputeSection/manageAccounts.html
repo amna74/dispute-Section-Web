@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <!----======== CSS ======== -->
+
+    <!----===== Boxicons CSS ===== -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+
+    <title>Orders Section</title>
+
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav class="sidebar">
+      <header>
+        <div class="image-text">
+          <span class="image">
+            <img src="logo.png" alt="" />
+          </span>
+
+          <div class="text logo-text">
+            <span class="name">B2B</span>
+            <span class="profession">First Choice</span>
+          </div>
+        </div>
+      </header>
+
+      <div class="menu-bar">
+        <div class="menu">
+          <li class="search-box">
+            <i class="bx bx-search icon"></i>
+            <input type="text" placeholder="Search..." />
+          </li>
+
+          <ul class="menu-links sidebarLink">
+            <li class="nav-link">
+              <a href="myHome.html">
+                <i class="bx bx-home-alt icon"></i>
+                <span class="text nav-text">My Home</span>
+              </a>
+            </li>
+
+            <li class="nav-link sidebarLink">
+              <a href="myMessages.html">
+                <i class="bx bx-bell icon"></i>
+
+                <span class="text nav-text">My Messages</span>
+              </a>
+            </li>
+
+            <li class="nav-link sidebarLink">
+              <a href="myOrders.html">
+                <i class="bx bx-bar-chart-alt-2 icon"></i>
+                <span class="text nav-text">My Orders</span>
+              </a>
+            </li>
+
+            <li class="nav-link sidebarLink actineLink">
+              <a href="mytransactions.html">
+                <i class="bx bx-pie-chart-alt icon"></i>
+                <span class="text nav-text">My Transactions</span>
+              </a>
+            </li>
+
+            <li class="nav-link sidebarLink">
+              <a href="myBuyingLeads.html">
+                <i class="bx bx-heart icon"></i>
+                <span class="text nav-text">My Buying Leads</span>
+              </a>
+            </li>
+
+            <li class="nav-link sidebarLink">
+              <a href="myList.html">
+                <i class="bx bx-wallet icon"></i>
+                <span class="text nav-text">My List</span>
+              </a>
+            </li>
+            <li class="nav-link sidebarLink">
+              <a href="myContactInfo.html">
+                <i class="bx bx-wallet icon"></i>
+                <span class="text nav-text">My Contact Info</span>
+              </a>
+            </li>
+            <li class="nav-link sidebarLink">
+              <a href="myTradeServices.html">
+                <i class="bx bx-wallet icon"></i>
+                <span class="text nav-text">My Trade Services</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <section
+      class="home"
+      style="width: 1110px"
+      style="margin-top: 20px; font-size: 20px"
+    >
+      <ul class="disputeNav" style="font-size: 17px; background-color: white">
+        <li class="dispute_link" onclick="location.href='mytransactions.html';">
+          Overview
+        </li>
+        <li
+          class="dispute_link"
+          onclick="location.href='transactionStatments.html';"
+        >
+          Transaction Statments
+        </li>
+        <li
+          class="active dispute_link"
+          onclick="location.href='manageAccounts.html';"
+        >
+          Manage Accounts
+        </li>
+      </ul>
+      <section style="font-size: 14px">
+        <div class="container">
+          <ul class="nav nav-tabs">
+            <li class="active">
+              <a data-toggle="tab" href="#menu1">Wire Transfer Accounts</a>
+            </li>
+            <li>
+              <a data-toggle="tab" href="#menu2">Wire Transfer Tracking</a>
+            </li>
+            <li><a data-toggle="tab" href="#menu3">Bank/Card Accounts</a></li>
+          </ul>
+        </div>
+        <div class="tab-content">
+          <div id="menu1" class="tab-pane fade in active">
+            <div
+              class="refundHeading"
+              style="padding-bottom: 0px; padding-top: 0px"
+            >
+              <p style="font-size: 12px">
+                Transactions > Wire Transfer Accounts
+              </p>
+              <p>Wire Transfer Accounts</p>
+            </div>
+            <div class="bankDiv">
+              <div class="row" style="height: 50px">
+                <div class="col-sm-1">
+                  <label class="search-heading" style="padding-top: 30px; padding-left: 20px;"
+                    >Status</label
+                  >
+                </div>
+                <div class="col-sm-11">
+                  <div
+                    class="form-group filter_input"
+                    style="padding-top: 10px"
+                  >
+                    <select
+                      class="form-control form-select mt-3 input-item"
+                      style="
+                        height: 30px;
+                        margin-left: 0px;
+                        width: 400px;
+                        padding-top: 5px;
+                        margin-top: 10px;
+                      "
+                    >
+                      <option selected disabled value="">
+                        Please choose your payment's current state..
+                      </option>
+                      <option>All</option>
+                      <option>Payment Not Yet Arrived</option>
+                      <option>Awaiting Supplier Match</option>
+                      <option>Completed</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+              <div class="row formrowtransaction" >
+                <div class="col setboundsform setLabel">Date Range</div>
+                <div class="col setboundsform"> 
+                  
+                    <div
+                      class="form-group filter_input"
+                      style="  width:150px;"
+                    >
+                      <input
+                        class="form-control form-select mt-3 input-item"
+                        style="
+                          height: 30px;
+                          width: 150px;
+                          padding-left:0px;
+                        "
+                        type="date"
+                        id ="reportMonth"
+                      >
+                        
+                    </div>
+                  
+                </div>
+                <div class="col setboundsform">
+                  <div class="form-group filter_input" style="width:150px;">
+                    <input class="form-control form-select mt-3 input-item" style="height: 30px; width: 150px;  padding-left:0px;" type="date" id ="reportMonth" >
+                  </div>
+                </div>
+                
+               
+                <div class="d-flex justify-content-left h-100" style="padding-left: 20px">
+                  <div class="searchbar">
+                    <input
+                      class="search_input"
+                      style="font-size: 15px; width: 400px;"
+                      type="text"
+                      name=""
+                      placeholder="Search By Account.."/>
+                    <a href="#" class="search_icon"><i class="fas fa-search"></i></a>
+                  </div>
+                </div>
+                <div class="col setboundsform setLabel" style="text-align:left;"> <a href="#"> clear Filters</a></div>
+              </div>
+              
+            </div>
+            <a
+              class="anchor-tag"
+              href="#"
+              style="padding-left: 20px; font-size: 15px; padding-top: 10px"
+            >
+              <i class="fas fa-calculator"></i> Calculate
+            </a>
+            <div class="row table-head-product">
+              <div class="col-sm-2">Latest Arrived Time(PST)</div>
+              <div class="col-sm-2">Supplier Information</div>
+              <div class="col-sm-2">Supplier T/T Account No.</div>
+
+              <div class="col-sm-2">Total Remittances</div>
+              <div class="col-sm-2">Status</div>
+              <div class="col-sm-1">Actions</div>
+            </div>
+            <div class="row table-body-product" style="font-size: 13px">
+              <div class="col-sm-2">-</div>
+              <div class="col-sm-2">
+                summer zhang Company:Zhejiang Honghui Capsule Co., Ltd.
+                Email:c***********@
+              </div>
+              <div class="col-sm-2">
+                1000 0126 3199 67 <a href="#"> Details</a>
+              </div>
+
+              <div class="col-sm-2">-</div>
+              <div class="col-sm-2" style="color: green">
+                Fully Matched by Supplier
+              </div>
+              <div class="col-sm-2"><a href="#">Remittance Details</a></div>
+            </div>
+            <div class="line-sperator"></div>
+            <div class="row table-body-product" style="font-size: 13px">
+              <div class="col-sm-2">-</div>
+              <div class="col-sm-2">
+                summer zhang Company:Zhejiang Honghui Capsule Co., Ltd.
+                Email:c***********@
+              </div>
+              <div class="col-sm-2">
+                1000 0126 3199 67 <a href="#"> Details</a>
+              </div>
+
+              <div class="col-sm-2">-</div>
+              <div class="col-sm-2" style="color: green">
+                Fully Matched by Supplier
+              </div>
+              <div class="col-sm-2"><a href="#">Remittance Details</a></div>
+            </div>
+            <div class="line-sperator"></div>
+          </div>
+          <div id="menu2" class="tab-pane fade">
+            <div
+              class="refundHeading"
+              style="padding-bottom: 0px; padding-top: 0px"
+            >
+              <p style="font-size: 12px">
+                Transactions > Wire Transfer Tracking
+              </p>
+              <p>Wire Transfer Tracking</p>
+            </div>
+            <div class="bankDiv">
+              <div class="row" style="height: 50px">
+                <div class="col-sm-1">
+                  <label class="search-heading" style="padding-top: 30px; padding-left: 20px;"
+                    >Status</label
+                  >
+                </div>
+                <div class="col-sm-11">
+                  <div
+                    class="form-group filter_input"
+                    style="padding-top: 10px"
+                  >
+                    <select
+                      class="form-control form-select mt-3 input-item"
+                      style="
+                        height: 30px;
+                        margin-left: 0px;
+                        width: 400px;
+                        padding-top: 5px;
+                        margin-top: 10px;
+                      "
+                    >
+                      <option selected disabled value="">
+                        Please choose your payment's current state..
+                      </option>
+                      <option>All</option>
+                      <option>Payment Not Yet Arrived</option>
+                      <option>Awaiting Supplier Match</option>
+                      <option>Completed</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+              <div class="row formrowtransaction" >
+                <div class="col setboundsform setLabel">Date Range</div>
+                <div class="col setboundsform"> 
+                  
+                    <div
+                      class="form-group filter_input"
+                      style="  width:150px;"
+                    >
+                      <input
+                        class="form-control form-select mt-3 input-item"
+                        style="
+                          height: 30px;
+                          width: 150px;
+                          padding-left:0px;
+                        "
+                        type="date"
+                        id ="reportMonth"
+                      >
+                        
+                    </div>
+                  
+                </div>
+                <div class="col setboundsform">
+                  <div class="form-group filter_input" style="width:150px;">
+                    <input class="form-control form-select mt-3 input-item" style="height: 30px; width: 150px;  padding-left:0px;" type="date" id ="reportMonth" >
+                  </div>
+                </div>
+                <div class="col setboundsform setLabel" >Remitance Amount</div>
+                <div class="col setboundsform">
+                  <div class="form-group filter_input"
+                    style="width:150px;">
+                    <select
+                    class="form-control form-select mt-3 input-item"
+                    style="
+                      height: 30px;
+                      margin-left: 0px;
+                      width: 150px;
+                     
+                    ">
+                    <option selected disabled value="">
+                      Please Select ..
+                    </option>
+                    <option> ~ 1000</option>
+                    <option>1000.01 ~ 3000</option>
+                    <option>3000.01 ~ 5000</option>
+                    <option>5000.01 ~ 10000</option>
+                    <option>10000.01 ~ 30000</option>
+                    <option>30000.01 ~ </option>
+                    </select>
+                  </div>
+                </div>
+               
+                <div class="d-flex justify-content-left h-100" style="padding-left: 20px">
+                  <div class="searchbar">
+                    <input
+                      class="search_input"
+                      style="font-size: 15px; width: 200px;"
+                      type="text"
+                      name=""
+                      placeholder="Search By Account.."/>
+                    <a href="#" class="search_icon"><i class="fas fa-search"></i></a>
+                  </div>
+                </div>
+                <div class="col setboundsform setLabel" style="text-align:left;"> <a href="#"> clear Filters</a></div>
+              </div>
+              
+            </div>
+            <a
+              class="anchor-tag"
+              href="#"
+              style="padding-left: 20px; font-size: 15px; padding-top: 10px"
+            >
+              <i class="fas fa-calculator"></i> Calculate
+            </a>
+            <div class="row table-head-product">
+              <div class="col-sm-2">Bank Value Date(PST)</div>
+              <div class="col-sm-2">Beneficiary Account</div>
+              <div class="col-sm-2">Remitance Information</div>
+
+              <div class="col-sm-2">Payment Details</div>
+              <div class="col-sm-2">Amount</div>
+              <div class="col-sm-1">Status</div>
+              <div class="col-sm-1">Actions</div>
+            </div>
+            <div class="row table-body-product" style="font-size: 13px">
+              <div class="col-sm-2">Bank Value Date(PST)</div>
+              <div class="col-sm-2">Beneficiary Account</div>
+              <div class="col-sm-2">Remitance Information</div>
+
+              <div class="col-sm-2">Payment Details</div>
+              <div class="col-sm-2">Amount</div>
+              <div class="col-sm-1">Status</div>
+              <div class="col-sm-1">Actions</div>
+            </div>
+            <div class="line-sperator"></div>
+            <div class="row table-body-product" style="font-size: 13px">
+              <div class="col-sm-2">Bank Value Date(PST)</div>
+              <div class="col-sm-2">Beneficiary Account</div>
+              <div class="col-sm-2">Remitance Information</div>
+
+              <div class="col-sm-2">Payment Details</div>
+              <div class="col-sm-2">Amount</div>
+              <div class="col-sm-1">Status</div>
+              <div class="col-sm-1">Actions</div>
+            </div>
+            <div class="line-sperator"></div>
+          </div>
+          <div id="menu3" class="tab-pane fade">
+            <div
+              class="refundHeading"
+              style="padding-bottom: 0px; padding-top: 0px"
+            >
+              <p style="font-size: 12px">Funds Home > Bank Account</p>
+            </div>
+            <div class="bankDiv">
+              <p class="cardHeading">My Credit/Debit Card</p>
+              <div
+                class="blue-notice"
+                style="margin: 20px; margin-top: 0px; margin-bottom: 20px"
+              >
+                <p>
+                  <i class="fas fa-flag-checkered"></i>
+                  No card had been added. A new credit/debit card can only be
+                  added while making payment during the checkout process.
+                </p>
+              </div>
+            </div>
+            <div class="bankDiv">
+              <p class="cardHeading">My Online Bank Payment</p>
+              <div
+                class="blue-notice"
+                style="margin: 20px; margin-top: 0px; margin-bottom: 20px"
+              >
+                <p>
+                  <i class="fas fa-flag-checkered"></i> New bank accounts can no
+                  longer be added to Online Bank payment for ACH and SEPA
+                  transfers.<a href="#"> Learn more</a>
+                </p>
+              </div>
+              <div class="box-wrapper">
+                <div class="add-card-btn">
+                  <i class="next-icon next-icon-add next-xl add-icon"></i
+                  ><a class="add-btn" aria-haspopup="true" aria-expanded="false"
+                    ><span
+                      data-i18n-appname=""
+                      data-i18n-ns=""
+                      data-i18n-key="myfinance.accountManage.bankAccount.addBtn"
+                      >Add a New Bank Account</span
+                    ></a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="bankDiv">
+              <p class="cardHeading">Other Accounts</p>
+              
+            </div>
+          </div>
+        </div>
+      </section>
+    </section>
+
+    <script src="script.js"></script>
+    <script></script>
+  </body>
+</html>
